@@ -161,6 +161,15 @@ a:hover {
 	transition: all 0.4s ease-out;
 }
 
+/* 010c-013c テスト */
+.btn-cv.cb {
+	padding: 0 0 0 58px;
+}
+.btn-cv.cb:after {
+	margin: 0;
+}
+/* 010c-013c テスト */
+
 .btn-cv > span:first-child {
 	display: flex;
 	align-items: center;
@@ -202,6 +211,20 @@ a:hover {
 .btn-cv:hover:after {
 	opacity: .9;
 }
+
+
+/* 010C-013C テスト */
+#floating.rect .btn-cv {
+	transition: all 0.2s ease-out;
+}
+#floating.rect .btn-cv:hover {
+	color: #fff;
+	background: #8c000e;
+}
+#floating.rect .btn-cv:hover span {
+	opacity: 1;
+}
+/* 010C-013C テスト */
 
 header {
 	box-sizing: border-box;
@@ -338,6 +361,34 @@ header {
 	box-shadow: 0 0 35px rgba(0,0,0,.3);
 }
 
+/* 010C-013C テスト */
+#floating.rect {
+	bottom: 10px;
+	right: 10px;
+	padding: 12px 24px 24px;
+	background: #DA0015;
+	box-shadow: 0 4px 16px rgba(0,0,0,.35);
+}
+
+#floating.rect .btn-cv {
+	background: #fff;
+	color: #DA0015;
+	box-shadow: none;
+	display: block;
+	padding: 0;
+}
+
+#floating.rect .btn-cv span {
+	display: inline;
+	width: 100%;
+	height: auto;
+	background: none;
+}
+
+#floating.rect .btn-cv:after {
+	display: none;
+}
+/* 010C-013C テスト */
 
 /* --- */
 
@@ -803,6 +854,12 @@ footer p {
 		font-size: 2.3rem;
 	}
 	
+	/* 010c-013c テスト */
+	.btn-cv.cb {
+		padding: 0 0 0 72px;
+	}
+	/* 010c-013c テスト */
+	
 	.fv .btn-cv {
 		margin: 54px 0 0 95px;
 	}
@@ -812,6 +869,12 @@ footer p {
 		height: 56px;
 		font-size: 1.3rem;
 	}
+	
+	/* 010C-013Cテスト */
+	#floating.rect .btn-cv > span:first-child {
+		font-size: 2.3rem;
+	}
+	/* 010C-013Cテスト */
 	
 	.btn-cv .f-13 {
 		font-size: 1.6rem;
