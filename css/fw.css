@@ -9,7 +9,7 @@ table, tr, th, td,
 input, textarea, select, button {
 	margin: 0;
 	padding: 0;
-	line-height: 1.6;
+	line-height: 1.8;
 	list-style: none inside;
 	-webkit-text-size-adjust: 100%;
 	font-size: 1.6rem;
@@ -137,6 +137,7 @@ h1, h2, h3, h4, h5 {font-weight: normal;}
 
 /* Heading
 ---------------------------------------------------------- */
+/*
 h1, h2, h3, h4, h5 {
 	margin-bottom: 2.8rem;
 }
@@ -148,6 +149,7 @@ h1 {
 h2 {
 	line-height: 1.35;
 }
+*/
 
 
 
