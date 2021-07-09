@@ -81,7 +81,10 @@
 #gnav li {
 	display: inline;
 	position: relative;
-	margin-left: 40px; 
+}
+
+#gnav li:nth-child(n+2) {
+	margin-left: 5.5% 
 }
 
 #gnav li:after {
@@ -113,6 +116,14 @@
 ------------------------------------ */
 .introduce h1 {
 	margin-bottom: 54px;
+}
+
+.introduce ul {
+	padding: 0 1%;
+}
+
+.introduce li {
+	margin: 15px 1.25%;
 }
 
 
