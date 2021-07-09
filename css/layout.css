@@ -46,7 +46,7 @@
 .inner {
 	max-width: 980px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 40px;
 }
 
 .heading {
@@ -122,6 +122,10 @@
 	margin-bottom: 54px;
 }
 
+.introduce ul {
+	justify-content: space-evenly;
+}
+
 .introduce li {
 	min-width: 96px;
 	margin: 15px 1.25%;
@@ -132,7 +136,7 @@
 .point-element {
 	box-sizing: border-box;
 	max-width: calc(100% - (50% - 490px + 340px));/* 100% - (50% - 980 / 2 + (980 - 640)) */
-	width: calc(100% - 10px);/* 100% - Windowとの余白(なければ0) */
+	width: calc(100% - 40px);/* 100% - Windowとの余白(なければ0) */
 }
 
 .point-element-shadow {
@@ -150,14 +154,14 @@
 
 .point-element-left {
 	margin-right: auto;
-	padding: 0 0 0 calc(50% - 490px - 10px);
-	border-left: solid transparent calc(10px);
+	padding: 0 0 0 calc(50% - 490px - 40px);
+	border-left: solid transparent calc(40px);
 }
 
 .point-element-right {
 	margin-left: auto;
-	padding: 0 calc(50% - 490px - 10px) 0 0;
-	border-right: solid transparent calc(10px);
+	padding: 0 calc(50% - 490px - 40px) 0 0;
+	border-right: solid transparent calc(40px);
 }
 
 
