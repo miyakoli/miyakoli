@@ -127,7 +127,7 @@
 }
 
 .introduce li {
-	min-width: 96px;
+	min-width: 98px;
 	margin: 15px 1.25%;
 }
 
@@ -169,6 +169,12 @@
 /* SP
 ------------------------------------ */
 @media screen and (max-width: 768px) {
+	.inner {
+		padding: 26px;
+	}
+	
+	
+	
 	#gnav {
 		width: 100%;
 		height: 0;
@@ -256,6 +262,24 @@
 	
 	#gnav a {
 		color: #fff;
+	}
+	
+	
+	
+	/* Point
+	------------------------------------ */
+	.point-element {
+		width: calc(100% - 26px);
+	}
+	
+	.point-element-left {
+		padding: 0 0 0 calc(50% - 490px - 26px);
+		border-left: solid transparent calc(26px);
+	}
+	
+	.point-element-right {
+		padding: 0 calc(50% - 490px - 26px) 0 0;
+		border-right: solid transparent calc(26px);
 	}
 }
 
