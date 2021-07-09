@@ -9,20 +9,21 @@ table, tr, th, td,
 input, textarea, select, button {
 	margin: 0;
 	padding: 0;
-	line-height: 1.85;
+	line-height: 1.6;
 	list-style: none inside;
 	-webkit-text-size-adjust: 100%;
 	font-size: 1.6rem;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 	color: #333;
-	font-family:"ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "Noto Sans Japanese", "メイリオ", Meiryo, sans-serif;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "Noto Sans Japanese", sans-serif;
 }
 img {vertical-align:  bottom;}
 
 
 
-/* Font-Size
+
+/* Font
 ---------------------------------------------------------- */
 .f-08 {font-size: .8rem;}
 .f-09 {font-size: .9rem;}
@@ -32,18 +33,17 @@ img {vertical-align:  bottom;}
 .f-13 {font-size: 1.3rem;}
 .f-14 {font-size: 1.4rem;}
 .f-15 {font-size: 1.5rem;}
-.f-16 {font-size: 1.6rem;}
+.f-16, h5 {font-size: 1.6rem;}
 .f-17 {font-size: 1.7rem;}
-.f-18 {font-size: 1.8rem;}
+.f-18, h4 {font-size: 1.8rem;}
 .f-19 {font-size: 1.9rem;}
-.f-20 {font-size: 2rem;}
+.f-20, h3 {font-size: 2rem;}
 .f-22 {font-size: 2.2rem;}
 .f-24 {font-size: 2.4rem;}
-.f-25 {font-size: 2.5rem;}
-.f-26 {font-size: 2.6rem;}
+.f-26, h2 {font-size: 2.6rem;}
 .f-28 {font-size: 2.8rem;}
 .f-30 {font-size: 3rem;}
-.f-32 {font-size: 3.2rem;}
+.f-32, h1 {font-size: 3.2rem;}
 .f-34 {font-size: 3.4rem;}
 .f-36 {font-size: 3.6rem;}
 .f-38 {font-size: 3.8rem;}
@@ -57,107 +57,89 @@ img {vertical-align:  bottom;}
 .f-54 {font-size: 5.4rem;}
 .f-56 {font-size: 5.6rem;}
 .f-58 {font-size: 5.8rem;}
-.f-60 {font-size: 6.0rem;}
+.f-60 {font-size: 6rem;}
 .f-62 {font-size: 6.2rem;}
 .f-64 {font-size: 6.4rem;}
 .f-66 {font-size: 6.6rem;}
 .f-68 {font-size: 6.8rem;}
-.f-70 {font-size: 7.0rem;}
+.f-70 {font-size: 7rem;}
 .f-72 {font-size: 7.2rem;}
 .f-74 {font-size: 7.4rem;}
 .f-76 {font-size: 7.6rem;}
 .f-78 {font-size: 7.8rem;}
-.f-80 {font-size: 8.0rem;}
+.f-80 {font-size: 8rem;}
 .f-82 {font-size: 8.2rem;}
 .f-84 {font-size: 8.4rem;}
 .f-86 {font-size: 8.6rem;}
 .f-88 {font-size: 8.8rem;}
-.f-90 {font-size: 9.0rem;}
+.f-90 {font-size: 9rem;}
 .f-92 {font-size: 9.2rem;}
 .f-94 {font-size: 9.4rem;}
 .f-96 {font-size: 9.6rem;}
 .f-98 {font-size: 9.8rem;}
 .f-100 {font-size: 10rem;}
 
+.ls--001 {letter-spacing: -0.01rem;}
+.ls--002 {letter-spacing: -0.02rem;}
+.ls--003 {letter-spacing: -0.03rem;}
+.ls--004 {letter-spacing: -0.04rem;}
+.ls--005 {letter-spacing: -0.05rem;}
+.ls--006 {letter-spacing: -0.06rem;}
+.ls--007 {letter-spacing: -0.07rem;}
+.ls--008 {letter-spacing: -0.08rem;}
+.ls--009 {letter-spacing: -0.09rem;}
+.ls--010 {letter-spacing: -0.1rem;}
+.ls--020 {letter-spacing: -0.2rem;}
+.ls--030 {letter-spacing: -0.3rem;}
+.ls--040 {letter-spacing: -0.4rem;}
+.ls--050 {letter-spacing: -0.5rem;}
+.ls--060 {letter-spacing: -0.6rem;}
+.ls--070 {letter-spacing: -0.7rem;}
+.ls--080 {letter-spacing: -0.8rem;}
+.ls--090 {letter-spacing: -0.9rem;}
+.ls--100 {letter-spacing: -1rem;}
+
+.lh-05 {line-height: .5;}
+.lh-06 {line-height: .6;}
+.lh-07 {line-height: .7;}
+.lh-08 {line-height: .8;}
+.lh-09 {line-height: .9;}
+.lh-10 {line-height: 1;}
+.lh-11 {line-height: 1.1;}
+.lh-12 {line-height: 1.2;}
+.lh-13 {line-height: 1.3;}
+.lh-14 {line-height: 1.4;}
+.lh-15 {line-height: 1.5;}
+.lh-16 {line-height: 1.6;}
+.lh-17 {line-height: 1.7;}
+.lh-18 {line-height: 1.8;}
+.lh-19 {line-height: 1.9;}
+.lh-20 {line-height: 2;}
 
 
-/* Text-Decoration
+
+/* Text
 ---------------------------------------------------------- */
-.lh-08 {
-	line-height: .8;
+button,
+.btn, .pagination a {
+	text-decoration: none;
 }
 
-.lh-09 {
-	line-height: .9;
-}
-
-.lh-10 {
-	line-height: 1;
-}
-
-.lh-11 {
-	line-height: 1.1;
-}
-
-.lh-12 {
-	line-height: 1.2;
-}
-
-.lh-13 {
-	line-height: 1.3;
-}
-
-.lh-14 {
-	line-height: 1.4;
-}
-
-.lh-15 {
-	line-height: 1.5;
-}
-
-.lh-16 {
-	line-height: 1.6;
-}
-
-.lh-17 {
-	line-height: 1.7;
-}
-
-.lh-18 {
-	line-height: 1.8;
-}
-
-.lh-19 {
-	line-height: 1.9;
-}
-
-.lh-20 {
-	line-height: 2.0;
-}
-
-.lh-21 {
-	line-height: 2.1;
-}
-
-.lh-22 {
-	line-height: 2.2;
-}
-
-
-
-/* Text-Decoration
----------------------------------------------------------- */
 .bold {font-weight: bold;}
 .normal,
 h1, h2, h3, h4, h5 {font-weight: normal;}
+
+.in-center {text-align: center;}
+.in-right {text-align: right;}
+.in-left {text-align: left;}
 
 
 
 /* Heading
 ---------------------------------------------------------- */
-/*h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5 {
 	margin-bottom: 2.8rem;
-}*/
+}
 
 h1 {
 	line-height: 1.25;
@@ -480,7 +462,7 @@ th, td {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 	grid-template-rows: auto;
-	grid-gap: 3%;
+	grid-gap: 15px;
 }
 
 
@@ -526,18 +508,215 @@ th, td {
 }
 
 
-/* Align
+
+/* Form
 ---------------------------------------------------------- */
-.in-center {
+/*
+	Input
+*/
+input, select, textarea {
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	outline: none;
+}
+
+input[type=text], input[type=password] {
+	width: 260px;
+}
+
+input[type=text], input[type=password], select, textarea {
+	-ms-appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	padding: .35rem .7rem;
+	background: transparent;
+	border-radius: 3px;
+}
+
+input[type=text], input[type=password], select {
+	height: 36px;
+}
+
+input[type=text], input[type=password], textarea {
+	background: #fafafa;
+}
+
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+	background: #fff;
+	border-color: #90bdde;
+}
+
+textarea {
+	width: 100%;
+}
+
+
+
+/*
+	Select
+*/
+select {
+	position: relative;
+	z-index: 1;
+	padding-right: 2.6rem;
+	-ms-appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	overflow: hidden;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.select {
+	display: inline-block;
+	height: 36px;
+	background: #fff;
+}
+
+.select:after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	position: relative;
+	z-index: 0;
+	margin: -5px 10px 0 auto;
+	top: -16px;
+	border: 4px solid transparent;
+	border-top: 6px solid #666;
+	border-radius: 1px;
+	pointer-events: none;
+}
+
+/*
+	Checkbox
+*/
+.checkbox input, .radio input {
+	display: none;
+}
+
+label.checkbox, label.radio {
+	display: block;
+	position: relative;
+	padding-left: 23px;
+}
+
+label.checkbox .checkbox:before {
+	content: "";
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 4px;
+	left: 0;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+label.checkbox input:checked + .checkbox:before {
+	border-color: #2e8ae5;
+	background: #2e8ae5;
+}
+
+label.checkbox input:checked + .checkbox:after {
+	content: "";
+	display: inline-block;
+	width: 7px;
+	height: 4px;
+	position: absolute;
+	top: 8px;
+	left: 4px;
+	border: 0 solid #fff;
+	border-width: 0 0 2px 2px;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+/*
+	Radio
+*/
+label.radio .radio:before {
+	content: "";
+	display: block;
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	top: 4px;
+	left: 0;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+}
+
+label.radio input:checked + .radio:before {
+	border-color: #2e8ae5;
+	background: #2e8ae5;
+}
+
+label.radio input:checked + .radio:after {
+	content: "";
+	display: inline-block;
+	width: 5px;
+	height: 5px;
+	position: absolute;
+	top: 10px;
+	left: 6px;
+	background: #fff;
+	border-radius: 50%;
+}
+
+
+/*
+	Button
+*/
+button, submit,
+.pagination a, .btn {
+	display: inline-block;
+	background: #508ab3;
+	border-radius: 3px;
+	padding: 5px 11px;
+	outline: none;
+	box-shadow: none;
+	border: 0;
+	color: #fff;
+	transition: opacity .35s;
+}
+
+button, submit {
+	cursor: pointer;
+}
+
+.pagination .stay, .btn.stay {
+	padding: 3px 9px;
+	border: 2px solid #508ab3;
+	background: #fff;
+	color: #5e98d1;
+}
+
+button:hover, submit:hover, a:hover {
+	opacity: .6;
+}
+
+
+
+/* Pagination #5e98d1
+---------------------------------------------------------- */
+.pagination {
 	text-align: center;
 }
 
-.in-right {
-	text-align: right;
+.pagination li {
+	display: inline-block;
+	
 }
 
-.in-left {
-	text-align: left;
+.pagination li a {
+	background: #f0f0f0;
+	color: #5e98d1;
 }
 
 
@@ -599,7 +778,6 @@ th, td {
 .mt-180 {margin-top: 180px !important;}
 .mt-190 {margin-top: 190px !important;}
 .mt-200 {margin-top: 200px !important;}
-.mt-none {margin-top: 0 !important;}
 
 .mb-02 {margin-bottom: 2px !important;}
 .mb-04 {margin-bottom: 4px !important;}
@@ -656,4 +834,19 @@ th, td {
 .mb-180 {margin-bottom: 180px !important;}
 .mb-190 {margin-bottom: 190px !important;}
 .mb-200 {margin-bottom: 200px !important;}
+
 .mb-none {margin-bottom: 0 !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
