@@ -21,6 +21,11 @@ input, textarea, select, button {
 	-moz-font-smoothing: antialiased;
 }
 img {vertical-align:  bottom;}
+.inline {display: inline;}
+.inline-block {display: inline-block;}
+.block {display: block;}
+.flex {display: flex;}
+
 
 
 
@@ -81,6 +86,16 @@ img {vertical-align:  bottom;}
 .f-98 {font-size: 9.8rem;}
 .f-100 {font-size: 10rem;}
 
+.ls-010 {letter-spacing: .1rem;}
+.ls-020 {letter-spacing: .2rem;}
+.ls-030 {letter-spacing: .3rem;}
+.ls-040 {letter-spacing: .4rem;}
+.ls-050 {letter-spacing: .5rem;}
+.ls-060 {letter-spacing: .6rem;}
+.ls-070 {letter-spacing: .7rem;}
+.ls-080 {letter-spacing: .8rem;}
+.ls-090 {letter-spacing: .9rem;}
+.ls-100 {letter-spacing: 1rem;}
 .ls--001 {letter-spacing: -0.01rem;}
 .ls--002 {letter-spacing: -0.02rem;}
 .ls--003 {letter-spacing: -0.03rem;}
@@ -384,7 +399,7 @@ th, td {
 
 /* Flex
 ---------------------------------------------------------- */
-[class^="flex-"] {
+[class*="flex-"] {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;

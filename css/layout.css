@@ -30,6 +30,11 @@
 	color: #00A3FF;
 }
 
+.clr-white,
+footer a, footer p {
+	color: #fff;
+}
+
 .clr-light-gray,
 .heading span:last-child {
 	color: #EBEBEB;
@@ -66,7 +71,7 @@
 
 
 
-/* Header
+/* Header Footer
 ------------------------------------ */
 #gheader {
 	width: 100%;
@@ -111,58 +116,190 @@
 	display: block;
 }
 
-#gnav a {
+#gnav a, #gfooter a {
 	text-decoration: none;
+}
+
+/* Footer */
+#gfooter {
+	padding: 100px 0;
+	 background: #00A3FF
+}
+
+#gfooter .flex-12 {
+	flex-direction: row-reverse;
+}
+
+#gfooter li {
+	display: inline;
 }
 
 
 /* Introduce
 ------------------------------------ */
-.introduce h1 {
+.home .introduce h1 {
 	margin-bottom: 54px;
 }
 
-.introduce ul {
+.home .introduce ul {
 	justify-content: space-evenly;
 }
 
-.introduce li {
+.home .introduce li {
 	min-width: 98px;
 	margin: 15px 1.25%;
 }
 
+
+
 /* Point
 ------------------------------------ */
-.point-element {
+.home .point-element {
 	box-sizing: border-box;
 	max-width: calc(100% - (50% - 490px + 340px));/* 100% - (50% - 980 / 2 + (980 - 640)) */
 	width: calc(100% - 40px);/* 100% - Windowとの余白(なければ0) */
 }
 
-.point-element-shadow {
+.home .point-element-shadow {
 	margin: 50px 0 0;
 	box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.1);
 }
 
-.point-element-text {
+.home .point-element-text {
 	margin: 140px 0 0;
 }
 
-.point-element-text:nth-child(2) {
+.home .point-element-text:nth-child(2) {
 	margin: 120px 0 0;
 }
 
-.point-element-left {
+.home .point-element-left {
 	margin-right: auto;
 	padding: 0 0 0 calc(50% - 490px - 40px);
 	border-left: solid transparent calc(40px);
 }
 
-.point-element-right {
+.home .point-element-right {
 	margin-left: auto;
 	padding: 0 calc(50% - 490px - 40px) 0 0;
 	border-right: solid transparent calc(40px);
 }
+
+.home .point .col-2 {
+	width: 64px;
+	height: 64px;
+	position: relative;
+	top: 10px;
+	left: 10px;
+	background: #fff;
+	border-radius: 32px;
+	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	line-height: 68px;
+}
+
+.home .point .col-2:after {
+	content: "";
+	display: block;
+	width: 84px;
+	height: 84px;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	background: #00A3FF;
+	border-radius: 42px;
+	z-index: -1;
+}
+
+
+
+/* Achievements
+------------------------------------ */
+.home .achievements h1 + .flex-12 {
+	align-items: flex-start;
+	justify-content: space-around;
+}
+
+.home .achievements .case {
+	box-sizing: border-box;
+	width: calc(25% - 1px);
+	min-width: 215px;
+	margin-right: 1px;
+	padding: 25px;
+	border-radius: 10px;
+	box-shadow: 0 18px 50px rgba(0,0,0,.1);
+}
+
+.home .achievements .case:last-child {
+	margin-right: 0;
+}
+
+.home .achievements .case:nth-child(odd) {
+	margin-top: 40px;
+}
+
+.home .achievements header {
+	margin: -25px -25px 25px;
+	padding: 25px;
+	border-radius: 10px 10px 0 0;
+}
+
+.home .achievements .case:nth-child(odd) header {
+	background: #00A3FF;
+}
+
+.home .achievements .case:nth-child(even) header {
+	background: #006299;
+}
+
+.home .achievements header span {
+	display: inline-block;
+	margin: 0 0 8px;
+	padding: 3px 3px 2px;
+	background: #fff;
+	border-radius: 3px;
+}
+
+.home .achievements .case:nth-child(odd) header span {
+	color: #00A3FF;
+}
+
+.home .achievements .case:nth-child(even) header span {
+	color: #006299;
+}
+
+.home .achievements ul.flex-12 {
+	justify-content: space-around
+}
+
+.home .achievements li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 61px;
+	height: 61px;
+	background: #F5F5F5;
+	border-radius: 50px;
+}
+
+
+
+/* Award
+------------------------------------ */
+.home .award li {
+	width: 136px;
+	height: 149px;
+	background: url(/img/icon-award.svg);
+}
+
+
+
+
+
+
+
+
 
 
 
