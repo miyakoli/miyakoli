@@ -71,6 +71,28 @@ footer a, footer p {
 
 
 
+/* Button, Link
+------------------------------------ */
+.link-icon {
+	display: inline-block;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 48px 0 0;
+	background: url(/img/link-icon.svg) 100% 50% no-repeat;
+}
+
+.btn {
+	box-sizing: border-box;
+	padding: 6px 24px;
+	background: #00A3FF;
+	border-radius: 50px;
+	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.18);
+	font-weight: bold;
+}
+
+
+
+
 /* Header Footer
 ------------------------------------ */
 #gheader {
@@ -130,17 +152,40 @@ footer a, footer p {
 	flex-direction: row-reverse;
 }
 
-#gfooter li {
-	display: inline;
+#gfooter .col-8 .flex-12 {
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+#gfooter .col-4 {
+	text-align: right;
+}
+
+#gfooter .col-4 .flex-12 {
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+#gfooter .col-4 .flex-12 .col-2 {
+	min-width: 44px;
+	margin-left: 10px;
+}
+
+
+
+/* Home
+------------------------------------ */
+.home section {
+	padding: 120px 0;
+}
+
+.home .introduce, .home .achievements, .home .works, .home .works, .home .award, .home .faq, .home .news, .home .closing {
+	border-top: 1px solid #E0E0E0;
 }
 
 
 /* Introduce
 ------------------------------------ */
-.home .introduce h1 {
-	margin-bottom: 54px;
-}
-
 .home .introduce ul {
 	justify-content: space-evenly;
 }
@@ -149,6 +194,24 @@ footer a, footer p {
 	min-width: 98px;
 	margin: 15px 1.25%;
 }
+
+
+
+/* About
+------------------------------------ */
+.home .about {
+	padding: 0;
+	background-image: url(/img/about-bg.jpg);
+	background-image: -webkit-image-set(/img/about-bg.jpg) 1x, url(/img/about-bg@2x.jpg) 2x);
+	background-image: image-set(url(/img/about-bg.jpg) 1x, url(/img/about-bg@2x.jpg) 2x);
+	background-size: cover;
+}
+
+.home .about .inner {
+	padding: 100px 40px;
+	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 8%, rgba(255,255,255,0.7) 92%, rgba(255,255,255,0) 100%);
+}
+
 
 
 
@@ -285,16 +348,124 @@ footer a, footer p {
 
 
 
+/* Works
+------------------------------------ */
+.home .works .slider {
+	background-image: url(/img/works-bg.jpg);
+	background-image: -webkit-image-set(/img/works-bg.jpg) 1x, url(/img/works-bg@2x.jpg) 2x);
+	background-image: image-set(url(/img/works-bg.jpg) 1x, url(/img/works-bg@2x.jpg) 2x);
+	background-size: cover;
+}
+
+
+
 /* Award
 ------------------------------------ */
+.home .award .inner.flex-12 {
+	position: relative;
+	align-items: center;
+}
+
+.home .award .inner.flex-12:after {
+	content: "";
+	display: block;
+	width: 8px;
+	height: 290px;
+	position: absolute;
+	left: calc(50% - 4px);
+	z-index: -1;
+	background: #00A3FF;
+	transform: skewX(35.4deg);
+}
+
+.home .award .col-6 {
+	width: 50%;
+}
+
+.home .award .text p {
+	max-width: 420px;
+	margin: 40px 0 0 40px;
+}
+
+.home .award .icon ul {
+	width: 308px;
+	margin: 25px 0 0 13.469387755%;
+}
+
+.home .award .icon ul + ul {
+	margin: 23px 0 0 auto;
+}
+
 .home .award li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 136px;
 	height: 149px;
 	background: url(/img/icon-award.svg);
 }
 
+.home .award li > span {
+	margin-top: -32px;
+}
 
 
+
+/* FAQ
+------------------------------------ */
+.home .faq .col-4 {
+	width: 28.571428571%;
+}
+
+
+
+/* News
+------------------------------------ */
+.home .news dl {
+	border-top: 1px solid #E0E0E0;
+}
+
+.home .news dt, .home .news dd {
+	margin: 0;
+	padding: 24px 0;
+	border-bottom: 1px solid #E0E0E0;
+}
+
+.home .news dt {
+	width: 16%;
+	font-size: 1.8rem;
+	font-family: 'Hind', sans-serif;
+}
+
+.home .news dd {
+	width: 84%;
+}
+
+.home .news a {
+	color: #333;
+	text-decoration: none;
+}
+
+
+/* Closing
+------------------------------------ */
+.home .closing .btn {
+	width: 164px;
+}
+
+.home .closing .flex-12 {
+	max-width: 810px;
+	margin: 0 auto;
+}
+
+.home .closing .col-4 {
+	width: 33.3333%;
+	margin: 0;
+}
+
+.home .closing .col-4:nth-child(n+2) {
+	box-shadow: -1px 0 0 #E0E0E0;
+}
 
 
 
@@ -827,6 +998,9 @@ footer a, footer p {
 }
 
 /* Custom */
+.slick-slide div {
+	margin: 0 72px;
+}
 .slider li {
     outline: none;
 }
