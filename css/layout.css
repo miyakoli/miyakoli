@@ -7,7 +7,7 @@ body {
 
 
 /* Font
------------------------------------- */
+------------------------------------------------------------------------ */
 .f-josefin,
 .heading span:last-child {
 	font-family: 'Josefin Sans', sans-serif;
@@ -23,9 +23,13 @@ body {
 	font-size: 6.4rem;
 }
 
-.ls-050,
+.ls-020,
 .heading span:last-child {
-	letter-spacing: .5rem;
+	letter-spacing: .2rem;
+}
+
+h1, h2, h3, h4, h5 {
+	line-height: 1.5;
 }
 
 
@@ -49,10 +53,14 @@ footer a, footer p {
 
 
 /* Common
------------------------------------- */
+------------------------------------------------------------------------ */
 ::selection {
 	background: #333;
 	color: #fff;
+}
+
+.contents {
+	padding: 130px 0 180px;
 }
 
 .inner {
@@ -72,14 +80,14 @@ footer a, footer p {
 }
 
 .heading span:first-child {
-	margin: -4px 0 0 5px;
+	margin: 0 0 0 5px;
 	font-weight: bold;
 }
 
 
 
 /* Button, Link
------------------------------------- */
+------------------------------------------------------------------------ */
 .link-icon {
 	display: inline-block;
 	height: 32px;
@@ -101,14 +109,14 @@ footer a, footer p {
 
 
 /* Header Footer
------------------------------------- */
+------------------------------------------------------------------------ */
 #gheader {
 	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 1;
-	background: rgba(255,255,255,.8);
-	backdrop-filter: blur(10px);
+	background: rgba(255,255,255,.96);
+	/*backdrop-filter: blur(10px); bug? SPのheight 100%が無効になる */
 }
 
 #gheader > .inner {
@@ -185,7 +193,7 @@ footer a, footer p {
 
 
 /* Home
------------------------------------- */
+------------------------------------------------------------------------ */
 .home section {
 	padding: 120px 0;
 }
@@ -193,6 +201,7 @@ footer a, footer p {
 .home .introduce, .home .achievements, .home .works, .home .works, .home .award, .home .faq, .home .news, .home .closing {
 	border-top: 1px solid #E0E0E0;
 }
+
 
 
 /* Introduce
@@ -222,7 +231,6 @@ footer a, footer p {
 	padding: 100px 40px;
 	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 8%, rgba(255,255,255,0.7) 92%, rgba(255,255,255,0) 100%);
 }
-
 
 
 
@@ -270,6 +278,9 @@ footer a, footer p {
 	box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.5);
 	text-align: center;
 	line-height: 68px;
+}
+.home .point-element-right .col-2 {
+	left: -10px;
 }
 
 .home .point .col-2:after {
@@ -430,30 +441,34 @@ footer a, footer p {
 
 /* News
 ------------------------------------ */
-.home .news dl {
+.home .news dl,
+body.news .contents .news-list {
 	border-top: 1px solid #E0E0E0;
 }
 
-.home .news dt, .home .news dd {
+.home .news dt, .home .news dd,
+body.news .contents .news-list dt, body.news .contents .news-list dd {
 	margin: 0;
 	padding: 24px 0;
 	border-bottom: 1px solid #E0E0E0;
 }
 
-.home .news dt {
+.home .news dt,
+body.news .contents .news-list dt {
 	width: 16%;
-	font-size: 1.8rem;
-	font-family: 'Hind', sans-serif;
 }
 
-.home .news dd {
+.home .news dd,
+body.news .contents .news-list dd {
 	width: 84%;
 }
 
-.home .news a {
+.home .news a,
+body.news .contents .news-list a {
 	color: #333;
 	text-decoration: none;
 }
+
 
 
 /* Closing
@@ -478,21 +493,65 @@ footer a, footer p {
 
 
 
+/* News
+------------------------------------------------------------------------ */
+.news.detail .contents {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+.news.detail .contents .date {
+	display: inline-block;
+	margin: 16px 0 100px;
+	padding: 0 0 42px;
+	border-bottom: 2px solid #00A3FF;
+}
+
+.news.detail .contents img {
+	margin: 100px 0;
+}
+
+
+
 
 
 
 
 
 /* SP
------------------------------------- */
+------------------------------------------------------------------------ */
 @media screen and (max-width: 768px) {
+	
+	
 	.inner {
-		padding: 26px;
+		padding: 0 26px;
+	}
+	
+	.media-br br {
+		display: none;
+	}
+	
+	.heading span:last-child {
+		font-size: 5rem;
+		letter-spacing: 0;
+	}
+	
+	h2.f-32 {
+		font-size: 2.4rem;
+	}
+	
+	h2.f-30 {
+		font-size: 2.2rem;
 	}
 	
 	
 	/* Header Footer
-	------------------------------------ */
+	------------------------------------------------------------------------ */
+	#gheader .inner {
+		height: 52px;
+		padding: 0 26px;
+	}
+	
 	#gnav {
 		width: 100%;
 		height: 0;
@@ -582,6 +641,10 @@ footer a, footer p {
 		color: #fff;
 	}
 	
+	#gfooter {
+		padding: 80px 0;
+	}
+	
 	#gfooter > .flex-12 {
 		flex-direction: column;
 	}
@@ -596,47 +659,125 @@ footer a, footer p {
 	
 	#gfooter .col-4 .flex-12 {
 		justify-content: flex-start;
+		margin: 10px 0 50px !important;
+	}
+	
+	#gfooter .col-4 .flex-12 .col-2 {
+		margin: 0 10px 0 0;
 	}
 	
 	#gfooter .col-8 .col-3 {
 		width: 50%;
 	}
 	
+	#gfooter .mt-56 {
+		margin-top: 50px !important;
+	}
+		
+	
+	
+	/* Home
+	------------------------------------------------------------------------ */
+	.home section {
+		padding: 80px 0;
+	}
+	
+	
+	/* Introduce
+	------------------------------------ */
+	
+	
+	
+	/* About
+	------------------------------------ */
+	.home .about .inner {
+		padding: 80px 26px;
+	}
 	
 	
 	
 	/* Point
 	------------------------------------ */
-	.point-element {
-		width: calc(100% - 26px);
+	.home .point .inner {
+		padding-bottom: 0;
 	}
 	
-	.point-element-left {
-		padding: 0 0 0 calc(50% - 490px - 26px);
-		border-left: solid transparent calc(26px);
+	.home .point .point-element {
+		width: 100%;
+		max-width: none;
+		margin: 50px 0 0;
+		padding: 0 26px;
+		border: 0;
 	}
 	
-	.point-element-right {
-		padding: 0 calc(50% - 490px - 26px) 0 0;
-		border-right: solid transparent calc(26px);
+	.home .point .point-element-shadow {
+		margin-bottom: 70px;
 	}
+	
+	.home .point .point-element-shadow:last-child {
+		margin-bottom: 0;
+	}
+	
+	.home .point .col-2 {
+		width: 44px;
+		height: 44px;
+		margin: 0 0 50px 0;
+		top: 6px;
+		left: 6px;
+		line-height: 48px;
+		font-size: 2.8rem;
+		letter-spacing: .1rem;
+	}
+	
+	.home .point-element-right .col-2 {
+		left: -6px;
+	}
+	
+	.home .point .col-2:after {
+		width: 56px;
+		height: 56px;
+		top: -6px;
+		left: -6px;
+	}
+	
+	.home .point .point-element .col-10 {
+		width: calc(100% - 76px);
+	}
+	
+	.home .point .point-element-shadow {
+		
+		box-shadow: none;
+	}
+	
+	.home .point .point-element-shadow img {
+		 box-shadow: 0px 9px 25px rgb(0,0,0,.2);
+	 }
 	
 	
 	
 	/* Achievements
 	------------------------------------ */
+	.home .achievements .mt-100 {
+		margin-top: 50px !important;
+	}
+	
 	.home .achievements .case {
 		width: 100%;
-		min-width: auto;
+		min-width: none;
 	}
 	
 	.home .achievements .case:nth-child(odd) {
-		margin: 0;
+		margin: 0 0 0 -15px;
+	}
+	
+	.home .achievements .case:nth-child(even) {
+		margin: 0 -15px 0 0;
 	}
 	
 	.home .achievements .case:nth-child(n+2) {
-		margin-top: 1px;
+		margin-top: 2px;
 	}
+	
 	
 	
 	/* Award
@@ -645,27 +786,87 @@ footer a, footer p {
 		width: 100%;
 	}
 	
-	.home .award .text p, .home .award .icon ul, .home .award .icon ul + ul {
-		margin: 0 !important;
+	.home .award .icon ul, .home .award .icon ul + ul {
+		margin: 0;
 	}
 	
 	.home .award .inner.flex-12:after {
 		display: none;
 	}
 	
+	.home .award .text p {
+		max-width: none;
+		margin: 50px 0 50px;
+		font-size: 2rem;
+	}
+	
+	.home .award .icon ul {
+		justify-content: space-around;
+		width: 100%;
+	}
+	
+	.home .award .icon ul + ul {
+		margin-top: 20px;
+	}
+	
 	
 	
 	/* FAQ
 	------------------------------------ */
+	.home .faq .mt-100 {
+		margin-top: 0 !important;
+	}
+	
+	.home .faq .mt-40 {
+		margin-top: 30px !important;
+	}
+	
+	.home .faq .mt-30 {
+		margin-top: 25px !important;
+	}
+	
 	.home .faq .col-4 {
+		width: 100%;
+		margin-top: 50px ;
+	}
+	
+	
+	
+	/* News
+	------------------------------------ */
+	.home .news dt, .home .news dd,
+	body.news .contents dt, body.news .contents dd {
 		width: 100%;
 	}
 	
+	.home .news dt,
+	 body.news .contents dt {
+		padding: 20px 0 0;
+		border-bottom: 0;
+	}
+	
+	.home .news dd,
+	body.news .contents dd {
+		padding: 0 0 20px;
+		border-top: 0;
+	}
 	
 	
 	
 	/* Closing
 	------------------------------------ */
+	.home .closing .mt-80 {
+		margin-top: 10px !important;
+	}
+	
+	.home .closing .mt-26 {
+		margin-top: 16px !important;
+	}
+	
+	.home .closing .mt-22 {
+		margin-top: 12px !important;
+	}
+	
 	.home .closing .col-4 {
 		width: 100%;
 		padding: 40px 0;
