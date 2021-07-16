@@ -137,6 +137,7 @@ img {vertical-align:  bottom;}
 
 /* Text
 ---------------------------------------------------------- */
+.deco-none,
 button,
 .btn, .pagination a {
 	text-decoration: none;
