@@ -103,6 +103,7 @@ footer a, footer p {
 	border-radius: 50px;
 	box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.18);
 	font-weight: bold;
+	text-align: center;
 }
 
 
@@ -164,6 +165,7 @@ footer a, footer p {
 /* Closing
 ------------------------------------ */
 .closing {
+	margin: 120px 0 0;
 	padding: 120px 0;
 }
 
@@ -223,8 +225,12 @@ footer a, footer p {
 	padding: 120px 0;
 }
 
-.home .introduce, .home .achievements, .home .works, .home .works, .home .award, .home .faq, .home .news, .home .closing {
+.home .introduce, .home .achievements, .home .works, .home .works, .home .award, .home .faq, .home .news, .closing {
 	border-top: 1px solid #E0E0E0;
+}
+
+.home .closing {
+	margin-top: 0;
 }
 
 
@@ -498,7 +504,7 @@ body.news .contents .news-list a {
 
 /* News
 ------------------------------------------------------------------------ */
-.news.detail .contents {
+.news.detail .contents, .seminar.detail .contents {
 	max-width: 840px;
 	margin: 0 auto;
 }
@@ -617,26 +623,26 @@ body.case .no span:last-child {
 
 /* Seminar
 ------------------------------------------------------------------------ */
-body.seminar h1 + .seminar-list {
+body.seminar h1 + .portrait-list {
 	margin: 0 0 120px;
 	padding: 0 0 120px;
 	border-bottom: 1px solid #E0E0E0;
 }
 
 /* 最後の行を左寄せ(3列並びまで有効) */
-body.seminar .seminar-list:after {
+.portrait-list:after {
 	content: "";
 	display: block;
 	width: 300px;
 	height: 0;
 }
 
-body.seminar h1 + .seminar-list + h2 {
+body.seminar h1 + .portrait-list + h2 {
 	position: relative;
 	padding-bottom: 50px;
 }
 
-body.seminar h1 + .seminar-list + h2:after {
+body.seminar h1 + .portrait-list + h2:after {
 	content: "";
 	display: block;
 	width: 70px;
@@ -647,12 +653,56 @@ body.seminar h1 + .seminar-list + h2:after {
 	background: #00A3FF;
 }
 
-body.seminar .seminar-list .col-4 {
+.portrait-list .col-4 {
 	width: 300px;
 	margin: 100px 0 0;
 }
 
 
+
+/* Seminar Detail
+------------------------------------ */
+body.seminar table tr {
+	border: 1px solid #E0E0E0;
+	border-width: 1px 0;
+}
+
+body.seminar th, body.seminar td {
+	padding: 24px 0;
+	border: 0;
+}
+
+body.seminar th {
+	white-space: nowrap;
+}
+
+body.seminar td {
+	width: 73.684210526%;
+}
+
+body.seminar .form {
+	padding: 50px;
+	box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+
+
+/* Documents
+------------------------------------------------------------------------ */
+body.documents .portrait-list .inner {
+	height: 248px;
+	padding: 30px 30px 70px;
+	position: relative;
+	background: #F6F6F6;
+}
+
+body.documents .portrait-list .btn {
+	width: 144px;
+	position: absolute;
+	left: calc(50% - 72px);
+	bottom: 30px;
+}
 
 
 
