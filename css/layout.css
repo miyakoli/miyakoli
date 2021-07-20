@@ -84,6 +84,12 @@ footer a, footer p {
 	font-weight: bold;
 }
 
+.form-wrap {
+	padding: 50px;
+	box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
 
 
 /* Button, Link
@@ -680,12 +686,6 @@ body.seminar td {
 	width: 73.684210526%;
 }
 
-body.seminar .form {
-	padding: 50px;
-	box-shadow: 0px 18px 50px rgba(0, 0, 0, 0.1);
-	border-radius: 10px;
-}
-
 
 
 /* Documents
@@ -703,6 +703,62 @@ body.documents .portrait-list .btn {
 	left: calc(50% - 72px);
 	bottom: 30px;
 }
+
+/* Download
+------------------------------------ */
+body.download .inner .flex-12 {
+	margin: 100px 0 120px;
+}
+
+body.download .inner .col-5 {
+	width: 35.918367347%;
+}
+
+body.download .inner .col-7 {
+	width: 53.87755102%;
+}
+
+
+
+
+/* Contact
+------------------------------------------------------------------------ */
+body.contact .form-wrap {
+	width: 760px;
+	margin: 120px auto 103px;
+	padding: 0;
+	box-shadow: none;
+}
+
+
+
+/* Company
+------------------------------------------------------------------------ */
+body.company table {
+	max-width: 760px;
+	margin: 0 auto;
+}
+
+body.company tr {
+	border: 1px solid #E0E0E0;
+	border-width: 1px 0;
+}
+
+body.company th, body.company td {
+	padding: 24px 0;
+	border: 0;
+}
+
+body.company td {
+	width: 73.684210526%;
+}
+
+
+
+/* Terms
+------------------------------------------------------------------------ */
+
+
 
 
 
