@@ -34,7 +34,8 @@ h1, h2, h3, h4, h5 {
 
 
 .clr-ini,
-#gnav a {color: #333;}
+#gnav a,
+body.download #gfooter p {color: #333;}
 
 .clr-theme,
 .heading span:first-child {
@@ -717,6 +718,13 @@ body.download .inner .col-5 {
 body.download .inner .col-7 {
 	width: 53.87755102%;
 }
+
+body.download #gfooter {
+	padding: 0 0 40px;
+	background: none;
+}
+
+
 
 
 
