@@ -55,6 +55,10 @@ footer a, footer p {
 
 /* Common
 ------------------------------------------------------------------------ */
+a {
+	color: #00A3FF;
+}
+
 ::selection {
 	background: #333;
 	color: #fff;
@@ -731,7 +735,8 @@ body.download #gfooter {
 
 /* Contact
 ------------------------------------------------------------------------ */
-body.contact .form-wrap {
+body.contact .form-wrap,
+body.booking .form-wrap {
 	width: 760px;
 	margin: 120px auto 103px;
 	padding: 0;
@@ -766,6 +771,53 @@ body.company td {
 /* Terms
 ------------------------------------------------------------------------ */
 
+
+
+
+/* Booking
+------------------------------------------------------------------------ */
+
+
+
+
+/* 404
+------------------------------------------------------------------------ */
+body.notfound {
+	background: #00A3FF;
+}
+
+body.notfound .top,
+body.notfound .bottom {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70%;
+}
+
+body.notfound .bottom {
+	height: 30%;
+}
+
+
+body.notfound h1 {
+	font-size: 17.8rem;
+}
+
+body.notfound .btn {
+	background: #fff;
+	color: #00A3FF;
+	box-shadow: none;
+}
+
+body.notfound ul li {
+	display: inline;
+	padding: 0 20px;
+}
+
+body.notfound ul a {
+	color: #fff;
+	text-decoration: none;
+}
 
 
 
