@@ -783,6 +783,7 @@ body.company td {
 /* 404
 ------------------------------------------------------------------------ */
 body.notfound {
+	padding: 0;
 	background: #00A3FF;
 }
 
@@ -791,11 +792,11 @@ body.notfound .bottom {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 70%;
+	height: 75%;
 }
 
 body.notfound .bottom {
-	height: 30%;
+	height: 25%;
 }
 
 
