@@ -691,6 +691,10 @@ body.seminar td {
 	width: 73.684210526%;
 }
 
+body.seminar .media-list-l > div:last-child {
+	padding-left: 4.2%;
+}
+
 
 
 /* Documents
