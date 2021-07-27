@@ -602,6 +602,7 @@ body.case .no span:last-child {
 }
 
 .case.detail .contents header .col-9 {
+	box-sizing: border-box;
 	width: calc(100% - 240px);
 }
 
@@ -741,7 +742,7 @@ body.download #gfooter {
 ------------------------------------------------------------------------ */
 body.contact .form-wrap,
 body.booking .form-wrap {
-	width: 760px;
+	max-width: 760px;
 	margin: 120px auto 103px;
 	padding: 0;
 	box-shadow: none;
@@ -840,7 +841,9 @@ body.notfound ul a {
 /* SP
 ------------------------------------------------------------------------ */
 @media screen and (max-width: 768px) {
-	
+	body {
+		padding-top: 52px;
+	}
 	
 	.inner {
 		padding: 0 26px;
@@ -1212,6 +1215,100 @@ body.notfound ul a {
 		font-size: 2.1rem;
 	}
 	
+	
+	
+	/* Case
+	------------------------------------------------------------------------ */
+	body.case .case-list > div {
+		padding: 25px 0;
+	}
+	
+	body.case .case-list .col-3,
+	body.case.detail .contents .col-3 {
+		width: 87px;
+	}
+	
+	body.case .case-list .col-3 img,
+	body.case.detail .contents .col-3 img {
+		width: 72px;
+		height: 72px;
+	}
+	
+	body.case .case-list .col-9,
+	body.case.detail .contents .col-9 {
+		width: calc(100% - 87px);
+		padding-right: 30px;
+		background-size: 24px;
+	}
+	
+	body.case .case-list .no,
+	body.case.detail .contents .no {
+		width: 66px;
+		height: 18px;
+	}
+	
+	
+	body.case .case-list .no .f-12,
+	body.case.detail .contents .no .f-12 {
+		font-size: 1.1rem;
+	}
+	
+	body.case .case-list .no .f-30,
+	body.case.detail .contents .no .f-30 {
+		font-size: 2.2rem;
+	}
+	
+	body.case .no span:first-child:after,
+	body.case.detail .contents .no span:first-child:after {
+		height: 18px;
+		left: 32px;
+	}
+	
+	body.case .case-list .col-9 .mt-30,
+	body.case.detail .contents header .mt-30 {
+		margin-top: 8px !important;
+	}
+	
+	body.case .case-list .col-9 .f-30 {
+		font-size: 2rem;
+	}
+	
+	body.case .case-list .col-9 h2 + p,
+	body.case.detail .contents .col-9 h2 + p {
+		margin-top: 3px !important;
+		font-size: 1.2rem;
+	}
+	
+	/* Detail
+	------------------------------------ */
+	body.case.detail .contents .col-9 {
+		padding: 0;
+	}
+	
+	body.case.detail .contents dt {
+		margin: 80px 0 0;
+	}
+	
+	
+	
+	
+	/* Documents
+	------------------------------------------------------------------------ */
+	body.download .contents .flex-12 {
+		display: block;
+	}
+	
+	body.download .contents .flex-12 > div {
+		width: 100%;
+	}
+	
+	body.download .contents .flex-12 > div + div {
+		margin-top: 80px;
+	}
+	
+	body.download .contents .form-wrap {
+		padding: 25px;
+	}
 	
 	
 	
