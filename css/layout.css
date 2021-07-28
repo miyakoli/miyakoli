@@ -52,6 +52,10 @@ footer a, footer p {
 	color: #EBEBEB;
 }
 
+.break {
+	word-break: break-all;
+}
+
 
 /* Common
 ------------------------------------------------------------------------ */
@@ -636,7 +640,6 @@ body.case .no span:last-child {
 /* Seminar
 ------------------------------------------------------------------------ */
 body.seminar h1 + .portrait-list {
-	margin: 0 0 120px;
 	padding: 0 0 120px;
 	border-bottom: 1px solid #E0E0E0;
 }
@@ -1012,13 +1015,21 @@ body.notfound ul a {
 		text-align: left;
 	}
 	
+	#gfooter .col-4 p img {
+		width: 160px;
+	}
+	
 	#gfooter .col-4 .flex-12 {
 		justify-content: flex-start;
-		margin: 10px 0 50px !important;
+		margin: 14px 0 50px !important;
 	}
 	
 	#gfooter .col-4 .flex-12 .col-2 {
-		margin: 0 10px 0 0;
+		margin: 0 6px 0 0;
+	}
+	
+	#gfooter .col-4 .flex-12 .col-2 img {
+		width: 40px;
 	}
 	
 	#gfooter .col-8 .col-3 {
@@ -1027,6 +1038,10 @@ body.notfound ul a {
 	
 	#gfooter .mt-56 {
 		margin-top: 50px !important;
+	}
+	
+	#gfooter .mt-56 img {
+		width: 140px;
 	}
 		
 	
@@ -1312,9 +1327,55 @@ body.notfound ul a {
 	
 	
 	
+	/* Seminar, Documents
+	------------------------------------------------------------------------ */
+	.portrait-list .col-4, .portrait-list .col-4 img {
+		width: 100%;
+		height: auto;
+	}
+	
+	/* Detail
+	------------------------------------ */
+	body.seminar.detail .contents .f-32 {
+		font-size: 2.4rem;
+	}
+	
+	body.seminar.detail .contents .f-24 {
+		font-size: 2.2rem;
+	}
+	
+	body.seminar.detail .contents .f-20 {
+		font-size: 1.8rem;
+	}
+	
+	body.seminar td {
+		width: 60%;
+	}
+	
+	body.seminar .contents .media-list-l img {
+		width: 72px;
+		height: auto;
+	}
+	
+	body.seminar .media-list-l > div:last-child {
+		padding-left: 18px;
+	}
 	
 	
 	
+	/* Company
+	------------------------------------------------------------------------ */
+	body.company td {
+		width: 66%;
+	}
+	
+	
+	
+	/* Booking
+	------------------------------------------------------------------------ */
+	body.booking .contents .f-24 {
+		font-size: 2rem;
+	}
 	
 	
 }
@@ -1398,11 +1459,6 @@ body.notfound ul a {
 
 
 /* //参考 */
-
-
-@media screen and (min-width: 768px) {
-	
-}
 
 
 /* slick */
