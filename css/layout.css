@@ -35,7 +35,9 @@ h1, h2, h3, h4, h5 {
 
 .clr-ini,
 #gnav a,
-body.download #gfooter p {color: #333;}
+body.download #gfooter p,
+body.contact #gfooter p,
+body.booking #gfooter p {color: #333;}
 
 .clr-theme,
 .heading span:first-child {
@@ -731,7 +733,9 @@ body.download .inner .col-7 {
 	width: 53.87755102%;
 }
 
-body.download #gfooter {
+body.download #gfooter,
+body.contact #gfooter,
+body.booking #gfooter {
 	padding: 0 0 40px;
 	background: none;
 }
