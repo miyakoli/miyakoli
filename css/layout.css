@@ -70,6 +70,14 @@ a {
 	color: #fff;
 }
 
+.btn {
+	transition: all .25s;
+}
+
+.btn:hover {
+	opacity: .75;
+}
+
 .contents {
 	padding: 130px 0 0;
 }
@@ -149,6 +157,7 @@ a {
 #gnav li {
 	display: inline;
 	position: relative;
+	font-weight: bold;
 }
 
 #gnav li:nth-child(n+2) {
@@ -249,6 +258,44 @@ a {
 .home .closing {
 	margin-top: 0;
 }
+
+
+
+/* FV
+------------------------------------ */
+.home .fv {
+	padding: 80px 0 120px;
+}
+
+.home .fv .flex-12 {
+	align-items: center;
+}
+
+.home .fv .col-6 {
+	width: 49.5%;
+}
+
+.home .fv .col-6:first-child {
+	box-sizing: border-box;
+	padding-left: 4%;
+}
+
+.home .fv .col-6 img {
+	width: 100%;
+	height: auto;
+	max-width: 473px;
+}
+
+.home .fv h1 + p {
+	width: 260px;
+	text-align: center;
+}
+
+.home .fv .btn {
+	width: 260px;
+	padding: 10px;
+}
+
 
 
 
@@ -641,6 +688,10 @@ body.case .no span:last-child {
 
 /* Seminar
 ------------------------------------------------------------------------ */
+body.seminar .contents a {
+	display: block;
+}
+
 body.seminar h1 + .portrait-list {
 	padding: 0 0 120px;
 	border-bottom: 1px solid #E0E0E0;
@@ -1055,6 +1106,37 @@ body.notfound ul a {
 	.home section {
 		padding: 80px 0;
 	}
+	
+	
+	
+	/* FV
+	------------------------------------ */
+	.home .fv {
+		padding: 80px 0;
+	}
+	
+	.home .fv .flex-12 {
+		flex-direction: column;
+	}
+	
+	.home .fv .col-6 {
+		width: 100%;
+		padding: 0 !important;
+	}
+	
+	.home .fv .col-6 + .col-6 {
+		margin: 60px 0 0;
+	}
+	
+	.home .fv .f-40 {
+		font-size: 2.9rem;
+	}
+	
+	.home .fv .col-6 p {
+		width: 100%;
+		text-align: center;
+	}
+	
 	
 	
 	/* Introduce
