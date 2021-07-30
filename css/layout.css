@@ -70,12 +70,12 @@ a {
 	color: #fff;
 }
 
-.btn {
+a {
 	transition: all .3s;
 }
 
-.btn:hover {
-	opacity: .75;
+a:hover {
+	opacity: .7;
 }
 
 .contents {
