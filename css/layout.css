@@ -688,7 +688,7 @@ body.case .no span:last-child {
 
 /* Seminar
 ------------------------------------------------------------------------ */
-body.seminar .contents a {
+body.seminar:not(.detail) .contents a {
 	display: block;
 }
 
