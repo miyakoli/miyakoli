@@ -131,6 +131,12 @@ a:hover {
 	text-align: center;
 }
 
+.btn-back {
+	padding-left: 40px;
+	background: #333 url(/img/home_black_24dp.svg) no-repeat 20px 50%;
+	background-size: 18px;
+}
+
 
 
 
@@ -272,23 +278,52 @@ a:hover {
 }
 
 .home .fv .col-6 {
-	width: 49.5%;
+	width: 47.5%;
+}
+
+.home .fv .col-6 + .col-6 {
+	width: 51.5%;
 }
 
 .home .fv .col-6:first-child {
 	box-sizing: border-box;
-	padding-left: 4%;
+	padding-left: 1.7%;
 }
 
 .home .fv .col-6 img {
 	width: 100%;
 	height: auto;
-	max-width: 473px;
+	max-width: 500px;
 }
 
 .home .fv h1 + p {
 	width: 260px;
+	position: relative;
 	text-align: center;
+}
+
+.home .fv h1 + p:before {
+	content: "";
+	display: block;
+	width: 26px;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	background: #333;
+	
+}
+
+.home .fv h1 + p:after {
+	content: "";
+	display: block;
+	width: 26px;
+	height: 1px;
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	background: #333;
+	
 }
 
 .home .fv .btn {
@@ -1120,7 +1155,7 @@ body.notfound ul a {
 	}
 	
 	.home .fv .col-6 {
-		width: 100%;
+		width: 100% !important;
 		padding: 0 !important;
 	}
 	
