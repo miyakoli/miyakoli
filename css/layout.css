@@ -79,7 +79,7 @@ a:hover {
 }
 
 .contents {
-	padding: 130px 0 0;
+	padding: 90px 0 0;
 }
 
 .inner {
@@ -197,8 +197,8 @@ a:hover {
 /* Closing
 ------------------------------------ */
 .closing {
-	margin: 120px 0 0;
-	padding: 120px 0;
+	margin: 80px 0 0;
+	padding: 80px 0;
 }
 
 .closing .btn {
@@ -254,7 +254,7 @@ a:hover {
 /* Home
 ------------------------------------------------------------------------ */
 .home section {
-	padding: 120px 0;
+	padding: 80px 0;
 }
 
 .home .introduce, .home .achievements, .home .works, .home .works, .home .award, .home .faq, .home .news, .closing {
@@ -270,7 +270,7 @@ a:hover {
 /* FV
 ------------------------------------ */
 .home .fv {
-	padding: 80px 0 120px;
+	padding: 60px 0 80px;
 }
 
 .home .fv .flex-12 {
@@ -358,7 +358,7 @@ a:hover {
 }
 
 .home .about .inner {
-	padding: 100px 40px;
+	padding: 80px 40px;
 	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 8%, rgba(255,255,255,0.7) 92%, rgba(255,255,255,0) 100%);
 }
 
@@ -378,11 +378,11 @@ a:hover {
 }
 
 .home .point-element-text {
-	margin: 140px 0 0;
+	margin: 100px 0 0;
 }
 
 .home .point-element-text:nth-child(2) {
-	margin: 120px 0 0;
+	margin: 80px 0 0;
 }
 
 .home .point-element-left {
@@ -610,12 +610,14 @@ body.news .contents .news-list a {
 
 .news.detail .contents .date {
 	display: inline-block;
-	margin: 16px 0 100px;
-	padding: 0 0 42px;
+	margin: 16px 0 80px;
+	padding: 0 0 32px;
 	border-bottom: 2px solid #00A3FF;
 }
 
 .news.detail .contents img {
+	max-width: 100%;
+	height: auto;
 	margin: 100px 0;
 }
 
@@ -623,13 +625,13 @@ body.news .contents .news-list a {
 
 /* Case
 ------------------------------------------------------------------------ */
-body.case .case-list > div:first-child {
-	border-top: 1px solid #E0E0E0;
-}
-
 body.case .case-list > div {
 	padding: 50px 0;
 	border-bottom: 1px solid #E0E0E0;
+}
+
+body.case .case-list > div:last-child {
+	border-bottom: 0;
 }
 
 body.case .case-list .col-3 {
@@ -728,7 +730,7 @@ body.seminar:not(.detail) .contents a {
 }
 
 body.seminar h1 + .portrait-list {
-	padding: 0 0 120px;
+	padding: 0 0 80px;
 	border-bottom: 1px solid #E0E0E0;
 }
 
@@ -758,7 +760,7 @@ body.seminar h1 + .portrait-list + h2:after {
 
 .portrait-list .col-4 {
 	width: 300px;
-	margin: 100px 0 0;
+	margin: 80px 0 0;
 }
 
 
@@ -808,7 +810,7 @@ body.documents .portrait-list .btn {
 /* Download
 ------------------------------------ */
 body.download .inner .flex-12 {
-	margin: 100px 0 120px;
+	margin: 80px 0;
 }
 
 body.download .inner .col-5 {
@@ -836,7 +838,7 @@ body.booking #gfooter {
 body.contact .form-wrap,
 body.booking .form-wrap {
 	max-width: 760px;
-	margin: 120px auto 103px;
+	margin: 80px auto 103px;
 	padding: 0;
 	box-shadow: none;
 }
@@ -853,6 +855,14 @@ body.company table {
 body.company tr {
 	border: 1px solid #E0E0E0;
 	border-width: 1px 0;
+}
+
+body.company tr:first-child {
+	border-top: 0;
+}
+
+body.company tr:last-child {
+	border-bottom: 0;
 }
 
 body.company th, body.company td {
@@ -936,6 +946,10 @@ body.notfound ul a {
 @media screen and (max-width: 768px) {
 	body {
 		padding-top: 52px;
+	}
+	
+	.contents {
+		padding: 60px 0 0;
 	}
 	
 	.inner {
@@ -1080,7 +1094,7 @@ body.notfound ul a {
 	
 	.closing .col-4 {
 		width: 100%;
-		padding: 40px 0;
+		padding: 30px 0;
 	}
 	
 	.closing .col-4:nth-child(n+2) {
@@ -1090,7 +1104,7 @@ body.notfound ul a {
 	/* Footer
 	------------------------------------ */
 	#gfooter {
-		padding: 80px 0;
+		padding: 50px 0;
 	}
 	
 	#gfooter > .flex-12 {
@@ -1139,7 +1153,7 @@ body.notfound ul a {
 	/* Home
 	------------------------------------------------------------------------ */
 	.home section {
-		padding: 80px 0;
+		padding: 50px 0;
 	}
 	
 	
@@ -1147,7 +1161,7 @@ body.notfound ul a {
 	/* FV
 	------------------------------------ */
 	.home .fv {
-		padding: 80px 0;
+		padding: 50px 0;
 	}
 	
 	.home .fv .flex-12 {
@@ -1172,6 +1186,14 @@ body.notfound ul a {
 		text-align: center;
 	}
 	
+	.home .fv h1 + p:before {
+		left: calc(50% - 110px);
+	}
+	
+	.home .fv h1 + p:after {
+		right: calc(50% - 110px);
+	}
+	
 	
 	
 	/* Introduce
@@ -1182,7 +1204,7 @@ body.notfound ul a {
 	/* About
 	------------------------------------ */
 	.home .about .inner {
-		padding: 80px 26px;
+		padding: 50px 26px;
 	}
 	
 	
@@ -1242,7 +1264,7 @@ body.notfound ul a {
 	
 	.home .point .point-element-shadow img {
 		 box-shadow: 0px 9px 25px rgb(0,0,0,.2);
-	 }
+	}
 	
 	
 	
