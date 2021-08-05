@@ -257,7 +257,7 @@ a:hover {
 	padding: 80px 0;
 }
 
-.home .introduce, .home .achievements, .home .works, .home .works, .home .award, .home .faq, .home .news, .closing {
+.home .introduce, .home .achievements, .home .works, .home .works, .home .news, .closing {
 	border-top: 1px solid #E0E0E0;
 }
 
@@ -349,7 +349,7 @@ a:hover {
 
 /* About
 ------------------------------------ */
-.home .about {
+.home .about, .home .award {
 	padding: 0;
 	background-image: url(/img/about-bg.jpg);
 	background-image: -webkit-image-set(/img/about-bg.jpg) 1x, url(/img/about-bg@2x.jpg) 2x);
@@ -357,7 +357,7 @@ a:hover {
 	background-size: cover;
 }
 
-.home .about .inner {
+.home .about .inner, .home .award .inner {
 	padding: 80px 40px;
 	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 8%, rgba(255,255,255,0.7) 92%, rgba(255,255,255,0) 100%);
 }
