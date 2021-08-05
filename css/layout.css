@@ -523,13 +523,14 @@ a:hover {
 	height: 290px;
 	position: absolute;
 	left: calc(50% - 4px);
-	z-index: -1;
 	background: #00A3FF;
 	transform: skewX(35.4deg);
 }
 
 .home .award .col-6 {
 	width: 50%;
+	position: relative;
+	z-index: 1;
 }
 
 .home .award .text p {
@@ -827,8 +828,6 @@ body.booking #gfooter {
 	padding: 0 0 40px;
 	background: none;
 }
-
-
 
 
 
