@@ -760,8 +760,10 @@ body.seminar h1 + .portrait-list + h2:after {
 }
 
 .portrait-list .col-4 {
+	display: block;
 	width: 300px;
 	margin: 80px 0 0;
+	text-decoration: none;
 }
 
 
