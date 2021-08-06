@@ -167,7 +167,7 @@ a:hover {
 }
 
 #gnav li:nth-child(n+2) {
-	margin-left: 5.5% 
+	margin-left: 3.8% 
 }
 
 #gnav li:after {
@@ -182,11 +182,11 @@ a:hover {
 	background: #00A3FF;
 }
 
-.news #gnav li:nth-child(1):after,
-.case #gnav li:nth-child(2):after,
-.seminar #gnav li:nth-child(3):after,
-.documents #gnav li:nth-child(4):after,
-.contact #gnav li:nth-child(5):after {
+.news #gnav li:nth-child(2):after,
+.case #gnav li:nth-child(3):after,
+.seminar #gnav li:nth-child(4):after,
+.documents #gnav li:nth-child(5):after,
+.contact #gnav li:nth-child(6):after {
 	display: block;
 }
 
