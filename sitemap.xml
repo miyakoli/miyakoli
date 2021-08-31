@@ -1,66 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>http://airdesign.ai/</loc>
+		<loc>https://airdesign.ai/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/news/</loc>
+		<loc>https://airdesign.ai/news/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/case/</loc>
+		<loc>https://airdesign.ai/case/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/seminar/</loc>
+		<loc>https://airdesign.ai/seminar/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/documents/</loc>
+		<loc>https://airdesign.ai/documents/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/contact/</loc>
+		<loc>https://airdesign.ai/contact/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/company/</loc>
+		<loc>https://airdesign.ai/company/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/terms/</loc>
+		<loc>https://airdesign.ai/terms/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/download/</loc>
+		<loc>https://airdesign.ai/download/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/booking/</loc>
+		<loc>https://airdesign.ai/booking/</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/news/20200821.html</loc>
+		<loc>https://airdesign.ai/news/20200821.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/news/20200902.html</loc>
+		<loc>https://airdesign.ai/news/20200902.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/case/orbis.html</loc>
+		<loc>https://airdesign.ai/case/orbis.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/case/aisei.html</loc>
+		<loc>https://airdesign.ai/case/aisei.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/case/lincwell.html</loc>
+		<loc>https://airdesign.ai/case/lincwell.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/case/supernurse.html</loc>
+		<loc>https://airdesign.ai/case/supernurse.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/seminar/20210713.html</loc>
+		<loc>https://airdesign.ai/seminar/20210713.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/seminar/20210525.html</loc>
+		<loc>https://airdesign.ai/seminar/20210525.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/seminar/20210415.html</loc>
+		<loc>https://airdesign.ai/seminar/20210415.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/seminar/20210316.html</loc>
+		<loc>https://airdesign.ai/seminar/20210316.html</loc>
 	</url>
 	<url>
-		<loc>http://airdesign.ai/seminar/20201215.html</loc>
+		<loc>https://airdesign.ai/seminar/20201215.html</loc>
+	</url>
+	<url>
+		<loc>https://airdesign.ai/seminar/20201215.html</loc>
+	</url>
+	<url>
+		<loc>https://airdesign.ai/seminar/20210825.html</loc>
+	</url>
+	<url>
+		<loc>https://airdesign.ai/case/flawless-cosmetics.html</loc>
 	</url>
 </urlset>
