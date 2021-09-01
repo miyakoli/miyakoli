@@ -58,6 +58,15 @@ footer a, footer p {
 	word-break: break-all;
 }
 
+table.company td {
+	padding: 0;
+	border: 0;
+}
+
+table.company td:first-child {
+	font-weight: bold;
+}
+
 
 /* Common
 ------------------------------------------------------------------------ */
