@@ -631,6 +631,11 @@ body.news .contents .news-list a {
 	margin: 100px 0;
 }
 
+.news.detail  dl.company dt,
+.news.detail  dl.company dd {
+	margin-top: 0;
+}
+
 
 
 /* Case
