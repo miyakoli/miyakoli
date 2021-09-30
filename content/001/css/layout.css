@@ -356,6 +356,10 @@ header {
 	font-weight: bold;
 }
 
+.fv .box-01 .btn-cv {
+	box-shadow: none;
+}
+
 .fv .box-03 {
 	text-align: center;
 }
@@ -689,7 +693,7 @@ footer p {
 	}
 	
 	.sp-none {
-		display: inline;
+		display: block;
 	}
 	
 	#gnav {
