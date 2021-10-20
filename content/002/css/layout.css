@@ -371,6 +371,20 @@ header {
 
 
 
+.intro .flex-12 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin: 0 0 50px;
+}
+
+.intro .flex-12 > li {
+	width: 33%;
+	margin: 0 0 20px;
+}
+
+
+
 .about .inner {
 	padding: 48px 20px 48px;
 }
@@ -772,6 +786,20 @@ footer p {
 		width: 56px;
 		height: 56px;
 		font-size: 1.3rem;
+	}
+	
+	
+	
+	.intro .flex-12 {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		margin: 0 0 60px;
+	}
+	
+	.intro .flex-12 > li {
+		width: 16%;
+		margin: 0 0 30px;
 	}
 	
 	
