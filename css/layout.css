@@ -147,7 +147,7 @@ a:hover {
 	font-weight: bold;
 	text-align: center;
 	transform: scale(1);
-	transition: all .2s ease-out;
+	transition: all .15s ease-out;
 }
 
 .btn:hover {
