@@ -226,11 +226,11 @@ a:hover {
 	background: #00A3FF;
 }
 
-.news #gnav li:nth-child(2):after,
-.case #gnav li:nth-child(3):after,
-.seminar #gnav li:nth-child(4):after,
-.documents #gnav li:nth-child(5):after,
-.contact #gnav li:nth-child(6):after {
+.news #gnav li:nth-child(1):after,
+.case #gnav li:nth-child(2):after,
+.seminar #gnav li:nth-child(3):after,
+.documents #gnav li:nth-child(4):after,
+.contact #gnav li:nth-child(5):after {
 	display: block;
 }
 
