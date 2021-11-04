@@ -717,7 +717,7 @@ button, submit {
 	color: #5e98d1;
 }
 
-button:hover, submit:hover, a:hover {
+button:hover, submit:hover {
 	opacity: .6;
 }
 
