@@ -127,6 +127,31 @@ a:hover {
 }
 
 
+#floating {
+	display: none;
+	opacity: 0;
+	position: fixed;
+	bottom: 0;
+	right: 16px;
+	z-index: 1000;
+	transition: all .25s ease-out;
+}
+
+#floating a {
+	padding: 8px;
+}
+
+#floating.on {
+	opacity: 1;
+	bottom: 20px;
+}
+
+#floating .btn-cv {
+	box-shadow: 0 0 35px rgba(0,0,0,.3);
+}
+
+
+
 
 /* Button, Link
 ------------------------------------------------------------------------ */
@@ -1066,6 +1091,11 @@ body.notfound ul a {
 	h2.f-30 {
 		font-size: 2.2rem;
 	}
+	
+	#floating {
+		display: block;
+	}
+	
 	
 	
 	/* Header Footer

@@ -363,6 +363,9 @@
 		</div>
 	</div>
 </footer>
+<div id="floating">
+	<p><a class="f-28 btn btn-cv ls-040" href="/download/"><span class="f-15 lh-13 ls--001">活用<br>事例付</span>資料ダウンロード</a></p>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="/js/common.js"></script>
 <script>
@@ -393,6 +396,54 @@ $('.slider').slick({
 	pauseOnHover: false,
 	swipe: false
 });
+
+
+// CV Buttin
+const lastCvOptions = {
+  root: document.querySelector('.root'),
+  rootMargin: '80px',
+  threshold: 0
+}
+
+const lastCvCallback = (entries, observer) => {
+	entries.forEach(entry => {
+		if(window.pageYOffset < $(".fv").height()) {
+			return false;
+		}
+		
+		if( entry.isIntersecting ) {
+			$("#floating").removeClass("on");
+		} else {
+			$("#floating").addClass("on");
+		}
+	})
+}
+
+const lastCv = new IntersectionObserver(lastCvCallback, lastCvOptions);
+
+lastCv.observe(document.querySelector('#gfooter'));
+
+const options = {
+  root: document.querySelector('.root'),
+  rootMargin: '80px',
+  threshold: 0
+}
+
+const callback = (entries, observer) => {
+	entries.forEach(entry => {
+		if( entry.isIntersecting ) {
+			$("#floating").removeClass("on");
+		} else {
+			$("#floating").addClass("on");
+		}
+	})
+	
+}
+
+const observer = new IntersectionObserver(callback, options);
+
+observer.observe(document.querySelector('.fv'));
+
 </script>
 </body>
 </html>
