@@ -133,7 +133,7 @@ a:hover {
 	position: fixed;
 	bottom: 0;
 	right: 16px;
-	z-index: 1000;
+	z-index: 5;
 	transition: all .25s ease-out;
 }
 
@@ -1115,6 +1115,7 @@ body.notfound ul a {
 	}
 	
 	#gheader > .flex-12 > .dl {
+		display: none;
 		order: 2;
 		flex: 1;
 		max-width: 115px;
@@ -1641,7 +1642,7 @@ body.notfound ul a {
 	/* Documents
 	------------------------------------------------------------------------ */
 	body.download .contents .flex-12 {
-		display: block;
+		flex-direction: column-reverse;
 	}
 	
 	body.download .contents .flex-12 > div {
@@ -1649,7 +1650,7 @@ body.notfound ul a {
 	}
 	
 	body.download .contents .flex-12 > div + div {
-		margin-top: 80px;
+		margin-bottom: 80px;
 	}
 	
 	body.download .contents .form-wrap {
