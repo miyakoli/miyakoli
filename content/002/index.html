@@ -65,7 +65,7 @@
 		<div class="box-01">
 			<div>
 				<h1>成果が出るのは<br>AI×クリエイティブ</h1>
-				<p class="mt-16 mb-24 pc-none"><a class="btn-cv f-18 bold" href="/download/001/"><span class="f-12 bold f-default in-center lh-12">活用<br>事例付</span>資料ダウンロード</a></p>
+				<p class="mt-16 mb-24 pc-none"><a class="btn-cv f-18 bold" href="#"><span class="f-12 bold f-default in-center lh-12">活用<br>事例付</span>資料ダウンロード</a></p>
 			</div>
 			<p class="mt-18">データ起点による<br>バナー･LP･動画制作なら<br class="sp-none">AIR Design</p>
 		</div>
@@ -74,7 +74,7 @@
 		</div>
 		<div class="box-03">
 			<p class="mt-28"><img src="img/fv-label.svg" alt="導入実績 サービス開始から300社以上 Design AI 特許申請中"></p>
-			<p class="mt-32 sp-none"><a class="btn-cv f-18 bold" href="/download/001/"><span class="f-12 bold f-default in-center lh-12">活用<br>事例付</span>資料ダウンロード</a></p>
+			<p class="mt-32 sp-none"><a class="btn-cv f-18 bold" href="#"><span class="f-12 bold f-default in-center lh-12">活用<br>事例付</span>資料ダウンロード</a></p>
 			<p class="f-12 mt-16">※ 弊社の実績より</p>
 		</div>
 	</div>
@@ -278,16 +278,24 @@
 </section>
 <section class="sec last-cv">
 	<div class="inner">
-		<h2 class="f-22">AIR Designにしかできない<br>
-			圧倒的な成果改善</h2>
-		<p><a class="btn-cv f-18 bold" href="/download/001/"><span class="f-12 bold f-default in-center lh-12">活用<br>事例付</span>資料ダウンロード</a></p>
+		<!--[if lte IE 8]>
+		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+		<![endif]-->
+		<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+		<script>
+		  hbspt.forms.create({
+		        region: "na1",
+		        portalId: "5877360",
+		        formId: "8cfc76ff-5fad-4a0f-bc61-b90494b17e49"
+		});
+		</script>
 	</div>
 </section>
 <footer class="sec">
 	<p class="f-14"><span class="f-24">&copy;</span><script>document.write(new Date().getFullYear());</script> Galapagos, inc.</p>
 </footer>
 <div id="floating">
-	<p><a class="btn-cv f-18 bold" href="/download/001/"><span class="f-12 bold f-default in-center lh-12">活用<br>事例付</span>資料ダウンロード</a></p>
+	<p><a class="btn-cv f-18 bold" href="#"><span class="f-12 bold f-default in-center lh-12">活用<br>事例付</span>資料ダウンロード</a></p>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="js/common.js"></script>
@@ -347,6 +355,21 @@ $('.slider').slick({
 	slidesToShow: 6,
 	slidesToScroll: 1
 });
+
+
+
+// btn-cv scroll
+$(function(){
+	$(".btn-cv").on("click", function(){
+		var y = $(".last-cv").offset().top;
+		$("html, body").animate({
+			scrollTop: y
+		}, 600, "swing");
+		
+		return false;
+	});
+});
+
 </script>
 </body>
 </html>
