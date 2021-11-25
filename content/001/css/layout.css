@@ -393,16 +393,10 @@ header {
 	font-size: 3.5rem;
 }
 
-.about .inner > p:first-of-type{
-  white-space: nowrap;
-}
 
-.point {
-  position: relative;
-}
 
 .point h2 {
-	font-size: 2.4rem;
+	font-size: 3.5rem;
 	margin-bottom: 48px;
 }
 
@@ -482,7 +476,7 @@ header {
 }
 
 .case .flex img {
-	width: 140px;
+	width: 163px;
 	margin: 0 0 20px;
 }
 
@@ -696,92 +690,6 @@ footer p {
 }
 
 
-@media screen and (max-width: 783px){
-  .fv{
-    position: relative;
-  }
-
-  .fv .underline {
-    border-bottom: 1px solid #333;
-    padding-bottom: 1%;
-  }
-
-  .fv .inner::after{
-    position: absolute;
-    top: 12.5%;
-    left: 0%;
-    width: 100%;
-    height: 16%;
-    content: "";
-    display: block;
-    background-color: #FFD413;
-    z-index: -1;
-  }
-  .point .inner {
-    padding: 48px 20px 88px;
-  }
-
-  .point-img01 {
-    position: absolute;
-    top: 7%;
-    right: 5%;
-    width: 40%;
-    max-width: 165px;
-  }
-
-  .point-img02 {
-    position: absolute;
-    top: 37.8%;
-    right: 5%;
-    width: 40%;
-    max-width: 165px;
-  }
-
-  .point-img03 {
-    position: absolute;
-    top: 65.5%;
-    right: 5%;
-    width: 40%;
-    max-width: 165px;
-  }
-
-  .point .flex.bg1::after {
-    position: absolute;
-    top: 30.5%;
-    left: 0%;
-    width: 100%;
-    height: 8%;
-    content: "";
-    display: block;
-    background-color: #FFD413;
-    z-index: -1;
-  }
-
-  .point .flex.bg2::after {
-    position: absolute;
-    top: 59.5%;
-    left: 0%;
-    width: 100%;
-    height: 8%;
-    content: "";
-    display: block;
-    background-color: #FFD413;
-    z-index: -1;
-  }
-
-  .point .flex.bg3::after {
-    position: absolute;
-    top: 85.4%;
-    left: 0%;
-    width: 100%;
-    height: 8%;
-    content: "";
-    display: block;
-    background-color: #FFD413;
-    z-index: -1;
-  }
-
-}
 
 
 @media screen and (min-width: 784px) {
