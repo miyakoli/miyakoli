@@ -390,12 +390,17 @@ header {
 }
 
 .about h2 {
-	font-size: 3.5rem;
+	font-size: 2.4rem;
 }
 
-.about .inner > p:first-of-type{
-  white-space: nowrap;
+.about h2 > span {
+  font-weight: 400;
 }
+
+.about p {
+  text-align: justify;
+}
+
 
 .point {
   position: relative;
@@ -717,70 +722,60 @@ footer p {
     background-color: #FFD413;
     z-index: -1;
   }
+
+  .point h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0;
+    border-top: 2px solid #838383;
+    border-bottom: 2px solid #838383;
+    padding: 16px 0 16px;
+  }
+
   .point .inner {
-    padding: 48px 20px 88px;
+    padding: 30px 20px 48px;
+    background-color: rgba(255, 212, 19, 1);
   }
 
-  .point-img01 {
-    position: absolute;
-    top: 7%;
-    right: 5%;
-    width: 40%;
-    max-width: 165px;
+  .point .flex>div:first-child>div p{
+    text-align: left;
   }
 
-  .point-img02 {
-    position: absolute;
-    top: 37.8%;
-    right: 5%;
-    width: 40%;
-    max-width: 165px;
+  .point .flex{
+    position: relative;
   }
 
-  .point-img03 {
+ .point .flex.contents01::after{
     position: absolute;
-    top: 65.5%;
-    right: 5%;
-    width: 40%;
-    max-width: 165px;
-  }
-
-  .point .flex.bg1::after {
-    position: absolute;
-    top: 30.5%;
+    top: 43.5%;
     left: 0%;
     width: 100%;
-    height: 8%;
+    height: 0.5%;
     content: "";
     display: block;
-    background-color: #FFD413;
-    z-index: -1;
-  }
+    background-color: #838383;
+ }
 
-  .point .flex.bg2::after {
+ .point .flex.contents02::after{
     position: absolute;
-    top: 59.5%;
+    top: 43.5%;
     left: 0%;
     width: 100%;
-    height: 8%;
+    height: 0.5%;
     content: "";
     display: block;
-    background-color: #FFD413;
-    z-index: -1;
-  }
+    background-color: #838383;
+ }
 
-  .point .flex.bg3::after {
+ .point .flex.contents03::after{
     position: absolute;
-    top: 85.4%;
+    top: 36.5%;
     left: 0%;
     width: 100%;
-    height: 8%;
+    height: 0.5%;
     content: "";
     display: block;
-    background-color: #FFD413;
-    z-index: -1;
-  }
-
+    background-color: #838383;
+ }
 }
 
 
