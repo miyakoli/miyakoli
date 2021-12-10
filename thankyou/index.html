@@ -20,6 +20,28 @@
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
 <link href="/css/fw.css" rel="stylesheet">
 <link href="/css/layout.css" rel="stylesheet">
+<script>
+// A8net Conversion Tag
+function getParameterByName(name, url = window.location.href) {
+	name = name.replace(/[\[\]]/g, "\\$&");
+	var regex = new RegExp('[?&]' + name + "(=([^&#]*)|&|#|$)"),
+		results = regex.exec(url);
+	if (!results) return null;
+	if (!results[2]) return "";
+	return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+var submissionGuid = getParameterByName("submissionGuid");
+if (submissionGuid) {
+	var now = new Date();
+	// YYYYMMDDHHII
+	var timestamp = now.getFullYear() + ('0' + (now.getMonth() + 1)).slice(-2) +('0' + now.getDate()).slice(-2) +  ('0' + now.getHours()).slice(-2) + ('0' + now.getMinutes()).slice(-2);
+	var salesOrder = submissionGuid + '_' + timestamp;
+	window.dataLayer = window.dataLayer || [];
+	dataLayer.push({ 'salesOrder': salesOrder });
+}
+</script>
+
 <!-- Google Tag Manager -->
 <script>
   (function(w, d, s, l, i) {
