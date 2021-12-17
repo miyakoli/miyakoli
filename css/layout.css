@@ -5,11 +5,11 @@ body {
 }
 
 .pc-none {
-	display: none;
+	display: none !important;
 }
 
 .sp-none {
-	display: block;
+	display: block !important;
 }
 
 
@@ -1056,11 +1056,11 @@ body.notfound ul a {
 	}
 	
 	.pc-none {
-		display: block;
+		display: block !important;
 	}
 	
 	.sp-none {
-		display: none;
+		display: none !important;
 	}
 	
 	.contents {
@@ -1359,6 +1359,13 @@ body.notfound ul a {
 	
 	/* Introduce
 	------------------------------------ */
+	.home .introduce .pc-none li {
+		padding: 0 24px 0 0;
+	}
+	
+	.home .introduce .pc-none + .pc-none li {
+		padding: 0 0 0 32px;
+	}
 	
 	
 	
