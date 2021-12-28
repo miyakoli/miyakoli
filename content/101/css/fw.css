@@ -1,0 +1,265 @@
+/* Initialize
+---------------------------------------------------------- */
+html{font-size:62.5%;}
+html,body {height: 100%;}
+body,
+h1, h2, h3, h4, h5, p,
+ul, ol, li, dl, dt, dd,
+table, tr, th, td,
+input, textarea, select, button {
+	margin: 0;
+	padding: 0;
+	line-height: 1.65;
+	list-style: none inside;
+	-webkit-text-size-adjust: 100%;
+	font-size: 1.6rem;
+	color: #333;
+}
+img {vertical-align:  bottom;}
+
+
+
+/* Font-Size
+---------------------------------------------------------- */
+.f-08 {font-size: .8rem;}
+.f-09 {font-size: .9rem;}
+.f-10 {font-size: 1rem;}
+.f-11 {font-size: 1.1rem;}
+.f-12 {font-size: 1.2rem;}
+.f-13 {font-size: 1.3rem;}
+.f-14 {font-size: 1.4rem;}
+.f-15 {font-size: 1.5rem;}
+.f-16 {font-size: 1.6rem;}
+.f-17 {font-size: 1.7rem;}
+.f-18 {font-size: 1.8rem;}
+.f-19 {font-size: 1.9rem;}
+.f-20 {font-size: 2rem;}
+.f-22 {font-size: 2.2rem;}
+.f-25 {font-size: 2.5rem;}
+.f-26 {font-size: 2.6rem;}
+.f-28 {font-size: 2.8rem;}
+.f-30 {font-size: 3rem;}
+.f-32 {font-size: 3.2rem;}
+.f-34 {font-size: 3.4rem;}
+.f-36 {font-size: 3.6rem;}
+.f-38 {font-size: 3.8rem;}
+.f-40 {font-size: 4rem;}
+.f-42 {font-size: 4.2rem;}
+.f-44 {font-size: 4.4rem;}
+.f-46 {font-size: 4.6rem;}
+.f-48 {font-size: 4.8rem;}
+.f-50 {font-size: 5rem;}
+.f-52 {font-size: 5.2rem;}
+.f-54 {font-size: 5.4rem;}
+.f-56 {font-size: 5.6rem;}
+.f-58 {font-size: 5.8rem;}
+.f-60 {font-size: 6.0rem;}
+.f-62 {font-size: 6.2rem;}
+.f-64 {font-size: 6.4rem;}
+.f-66 {font-size: 6.6rem;}
+.f-68 {font-size: 6.8rem;}
+.f-70 {font-size: 7.0rem;}
+.f-72 {font-size: 7.2rem;}
+.f-74 {font-size: 7.4rem;}
+.f-76 {font-size: 7.6rem;}
+.f-78 {font-size: 7.8rem;}
+.f-80 {font-size: 8.0rem;}
+.f-82 {font-size: 8.2rem;}
+.f-84 {font-size: 8.4rem;}
+.f-86 {font-size: 8.6rem;}
+.f-88 {font-size: 8.8rem;}
+.f-90 {font-size: 9.0rem;}
+.f-92 {font-size: 9.2rem;}
+.f-94 {font-size: 9.4rem;}
+.f-96 {font-size: 9.6rem;}
+.f-98 {font-size: 9.8rem;}
+.f-100 {font-size: 10rem;}
+
+
+
+/* Text-Decoration
+---------------------------------------------------------- */
+.lh-08 {
+	line-height: .8;
+}
+
+.lh-09 {
+	line-height: .9;
+}
+
+.lh-10 {
+	line-height: 1;
+}
+
+.lh-11 {
+	line-height: 1.1;
+}
+
+.lh-12 {
+	line-height: 1.2;
+}
+
+.lh-13 {
+	line-height: 1.3;
+}
+
+.lh-14 {
+	line-height: 1.4;
+}
+
+.lh-15 {
+	line-height: 1.5;
+}
+
+.lh-16 {
+	line-height: 1.6;
+}
+
+.lh-17 {
+	line-height: 1.7;
+}
+
+.lh-18 {
+	line-height: 1.8;
+}
+
+.lh-19 {
+	line-height: 1.9;
+}
+
+.lh-20 {
+	line-height: 2.0;
+}
+
+.lh-21 {
+	line-height: 2.1;
+}
+
+.lh-22 {
+	line-height: 2.2;
+}
+
+
+
+/* Text-Decoration
+---------------------------------------------------------- */
+.bold {font-weight: bold;}
+
+
+
+
+/* Margin
+---------------------------------------------------------- */
+.mt-02 {margin-top: 2px !important;}
+.mt-04 {margin-top: 4px !important;}
+.mt-05 {margin-top: 5px !important;}
+.mt-06 {margin-top: 6px !important;}
+.mt-08 {margin-top: 8px !important;}
+.mt-10 {margin-top: 10px !important;}
+.mt-12 {margin-top: 12px !important;}
+.mt-14 {margin-top: 14px !important;}
+.mt-15 {margin-top: 15px !important;}
+.mt-16 {margin-top: 16px !important;}
+.mt-18 {margin-top: 18px !important;}
+.mt-20 {margin-top: 20px !important;}
+.mt-22 {margin-top: 22px !important;}
+.mt-24 {margin-top: 24px !important;}
+.mt-25 {margin-top: 25px !important;}
+.mt-26 {margin-top: 26px !important;}
+.mt-28 {margin-top: 28px !important;}
+.mt-30 {margin-top: 30px !important;}
+.mt-32 {margin-top: 32px !important;}
+.mt-34 {margin-top: 34px !important;}
+.mt-35 {margin-top: 35px !important;}
+.mt-36 {margin-top: 36px !important;}
+.mt-38 {margin-top: 38px !important;}
+.mt-40 {margin-top: 40px !important;}
+.mt-42 {margin-top: 42px !important;}
+.mt-44 {margin-top: 44px !important;}
+.mt-45 {margin-top: 45px !important;}
+.mt-46 {margin-top: 46px !important;}
+.mt-48 {margin-top: 48px !important;}
+.mt-50 {margin-top: 50px !important;}
+.mt-52 {margin-top: 52px !important;}
+.mt-54 {margin-top: 54px !important;}
+.mt-55 {margin-top: 55px !important;}
+.mt-56 {margin-top: 56px !important;}
+.mt-58 {margin-top: 58px !important;}
+.mt-60 {margin-top: 60px !important;}
+.mt-62 {margin-top: 62px !important;}
+.mt-64 {margin-top: 64px !important;}
+.mt-65 {margin-top: 65px !important;}
+.mt-66 {margin-top: 66px !important;}
+.mt-68 {margin-top: 68px !important;}
+.mt-70 {margin-top: 70px !important;}
+.mt-80 {margin-top: 80px !important;}
+.mt-90 {margin-top: 90px !important;}
+.mt-100 {margin-top: 100px !important;}
+.mt-110 {margin-top: 110px !important;}
+.mt-120 {margin-top: 120px !important;}
+.mt-130 {margin-top: 130px !important;}
+.mt-140 {margin-top: 140px !important;}
+.mt-150 {margin-top: 150px !important;}
+.mt-160 {margin-top: 160px !important;}
+.mt-170 {margin-top: 170px !important;}
+.mt-180 {margin-top: 180px !important;}
+.mt-190 {margin-top: 190px !important;}
+.mt-200 {margin-top: 200px !important;}
+.mt-none {margin-top: 0 !important;}
+
+.mb-02 {margin-bottom: 2px !important;}
+.mb-04 {margin-bottom: 4px !important;}
+.mb-05 {margin-bottom: 5px !important;}
+.mb-06 {margin-bottom: 6px !important;}
+.mb-08 {margin-bottom: 8px !important;}
+.mb-10 {margin-bottom: 10px !important;}
+.mb-12 {margin-bottom: 12px !important;}
+.mb-14 {margin-bottom: 14px !important;}
+.mb-15 {margin-bottom: 15px !important;}
+.mb-16 {margin-bottom: 16px !important;}
+.mb-18 {margin-bottom: 18px !important;}
+.mb-20 {margin-bottom: 20px !important;}
+.mb-22 {margin-bottom: 22px !important;}
+.mb-24 {margin-bottom: 24px !important;}
+.mb-25 {margin-bottom: 25px !important;}
+.mb-26 {margin-bottom: 26px !important;}
+.mb-28 {margin-bottom: 28px !important;}
+.mb-30 {margin-bottom: 30px !important;}
+.mb-32 {margin-bottom: 32px !important;}
+.mb-34 {margin-bottom: 34px !important;}
+.mb-35 {margin-bottom: 35px !important;}
+.mb-36 {margin-bottom: 36px !important;}
+.mb-38 {margin-bottom: 38px !important;}
+.mb-40 {margin-bottom: 40px !important;}
+.mb-42 {margin-bottom: 42px !important;}
+.mb-44 {margin-bottom: 44px !important;}
+.mb-45 {margin-bottom: 45px !important;}
+.mb-46 {margin-bottom: 46px !important;}
+.mb-48 {margin-bottom: 48px !important;}
+.mb-50 {margin-bottom: 50px !important;}
+.mb-52 {margin-bottom: 52px !important;}
+.mb-54 {margin-bottom: 54px !important;}
+.mb-55 {margin-bottom: 55px !important;}
+.mb-56 {margin-bottom: 56px !important;}
+.mb-58 {margin-bottom: 58px !important;}
+.mb-60 {margin-bottom: 60px !important;}
+.mb-62 {margin-bottom: 62px !important;}
+.mb-64 {margin-bottom: 64px !important;}
+.mb-65 {margin-bottom: 65px !important;}
+.mb-66 {margin-bottom: 66px !important;}
+.mb-68 {margin-bottom: 68px !important;}
+.mb-70 {margin-bottom: 70px !important;}
+.mb-80 {margin-bottom: 80px !important;}
+.mb-90 {margin-bottom: 90px !important;}
+.mb-100 {margin-bottom: 100px !important;}
+.mb-110 {margin-bottom: 110px !important;}
+.mb-120 {margin-bottom: 120px !important;}
+.mb-130 {margin-bottom: 130px !important;}
+.mb-140 {margin-bottom: 140px !important;}
+.mb-150 {margin-bottom: 150px !important;}
+.mb-160 {margin-bottom: 160px !important;}
+.mb-170 {margin-bottom: 170px !important;}
+.mb-180 {margin-bottom: 180px !important;}
+.mb-190 {margin-bottom: 190px !important;}
+.mb-200 {margin-bottom: 200px !important;}
+.mb-none {margin-bottom: 0 !important;}
