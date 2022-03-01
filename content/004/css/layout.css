@@ -82,6 +82,8 @@ header, header + section {
 }
 
 .sec-04 {
+    height: 38px;
+    overflow: hidden;
 	margin-top: calc((140 / 1920) * 100vw);
 	padding: 0;
 }
