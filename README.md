@@ -1,6 +1,43 @@
 # 備忘録
-### 本番反映するとき
 
-1. productionブランチに変更を取り込みましょう
-1. `aws s3 sync . s3://air-design-website-production --delete --acl public-read --exclude "*.git*" --profile air-design-lp-production`のコマンドを打ちましょう。（aws cli入れといてください。profileは設定しておきましょう）
-1. CloudFrontのキャッシュを消去してください。（この[記事](https://www.notion.so/galapagos/CloudFront-333d54284f1a460ba4b6d02f731f854f)を見てください）
+## 現在の運用
+
+**開発フロー**
+1. coder さんが develop ブランチから開発ブランチをチケットIDの名前で作成し開発
+2. coder さんが PR をだす
+3. TECH が develop へマージ (自動 deploy)
+4. staging へ develop をマージ
+5. coder さん + 依頼者がレビュー
+6. TECH が production へマージ (自動 deploy)
+
+
+## ホスティング
+- リソースは S3 におかれ、そのまま S3 + CloudFront でホスティングされている
+
+
+## deploy
+
+GitHub アクションで deploy & CloudFront キャッシュクリアできる。
+
+deploy 時にやっていることは以下の通り
+1. 当該ブランチの内容をそのまま S3 へ sync（ミラーリング）
+2. CloudFront のキャッシュをクリア
+
+
+手動で行う場合は以下のコマンド（aws cli入れといてください。profileは設定しておきましょう）
+
+**staging**
+```
+aws s3 sync . "s3://airdesign-website-staging" \
+    --delete --acl public-read --exclude "*.git*"
+aws cloudfront create-invalidation \
+    --distribution-id "E5R3CGQ6JDVRL" --paths "/*"
+```
+
+**production**
+```
+aws s3 sync . "s3://air-design-website-production" \
+    --delete --acl public-read --exclude "*.git*"
+aws cloudfront create-invalidation \
+    --distribution-id "E1NPRRAABLQ3PO" --paths "/*"
+```

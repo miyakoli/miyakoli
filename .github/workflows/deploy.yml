@@ -1,0 +1,50 @@
+# This is a basic workflow to help you get started with Actions
+
+name: deploy
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the develop branch
+  push:
+    branches:
+      - testing
+      - staging
+      - production
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2  # リポジトリをチェックアウト
+
+      - name: Deploy (unstable deployment to staging)
+        if: ${{ github.ref == 'refs/heads/testing' }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.STG_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.STG_SECRET_KEY }}
+          ADLP_ORIGIN_S3: s3://airdesign-website-staging
+          ADLP_DISTRO_ID: E5R3CGQ6JDVRL
+        run: .github/workflows/deploy.sh
+
+      - name: Deploy staging
+        if: ${{ github.ref == 'refs/heads/staging' }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.STG_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.STG_SECRET_KEY }}
+          ADLP_ORIGIN_S3: s3://airdesign-website-staging
+          ADLP_DISTRO_ID: E5R3CGQ6JDVRL
+        run: .github/workflows/deploy.sh
+
+      - name: Deploy production
+        if: ${{ github.ref == 'refs/heads/production' }}
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.PRODUCTION_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
+          ADLP_ORIGIN_S3: s3://air-design-website-production
+          ADLP_DISTRO_ID: E1NPRRAABLQ3PO
+        run: .github/workflows/deploy.sh --make-release-tag
