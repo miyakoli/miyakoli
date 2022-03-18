@@ -47,4 +47,4 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.PRODUCTION_AWS_SECRET_ACCESS_KEY }}
           ADLP_ORIGIN_S3: s3://air-design-website-production
           ADLP_DISTRO_ID: E1NPRRAABLQ3PO
-        run: .github/workflows/deploy.sh
+        run: .github/workflows/deploy.sh --make-release-tag
