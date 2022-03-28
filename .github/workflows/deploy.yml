@@ -8,7 +8,7 @@ on:
   push:
     branches:
       - testing
-      - staging
+      - stg/**
       - production
 
   # Allows you to run this workflow manually from the Actions tab
@@ -22,7 +22,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2  # リポジトリをチェックアウト
 
-      - name: Deploy (unstable deployment to staging)
+      - name: Deploy testing (unstable deployment to staging)
         if: ${{ github.ref == 'refs/heads/testing' }}
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.STG_ACCESS_KEY }}
@@ -32,7 +32,7 @@ jobs:
         run: .github/workflows/deploy.sh
 
       - name: Deploy staging
-        if: ${{ github.ref == 'refs/heads/staging' }}
+        if: ${{ startsWith(github.ref, 'refs/heads/stg/') }}
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.STG_ACCESS_KEY }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.STG_SECRET_KEY }}
