@@ -33,7 +33,8 @@ done
 
 aws s3 sync . "${ADLP_ORIGIN_S3}" \
     --delete --acl public-read \
-    --exclude "*.git*" --exclude "*.github*"
+    --exclude "*.git*" --exclude "*.github*" \
+    --exclude "README.md" --exclude "README_files*"
 aws cloudfront create-invalidation \
     --distribution-id "${ADLP_DISTRO_ID}" --paths "/*"
 
