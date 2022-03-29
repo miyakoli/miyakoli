@@ -1,0 +1,136 @@
+.float {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: vw(61);
+  width: 100%;
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+
+  @include mediaQuery(pc) {
+  
+  }
+
+  &.is-active {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+}
+
+.float__cv__list {
+  display: flex;
+  height: 100%;
+
+  @include mediaQuery(pc) {
+  
+  }
+}
+
+.float__cv__item {
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+  @include mediaQuery(pc) {
+  
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: vw(6);
+    height: vw(6);
+
+    @include mediaQuery(pc) {
+  
+    }
+  }
+
+  &:nth-of-type(1) {
+    background-color: #fff;
+    border: vw(2) solid #F8902F;
+
+    @include mediaQuery(pc) {
+  
+    }
+
+    .float__cv__txt {
+      color: #F8902F;
+    }
+
+    &::after {
+      top: 45%;
+      right: vw(33);
+      transform: translateX(-50%) rotate(-45deg);
+      border-bottom: solid vw(2.5) #F8902F;
+      border-right: solid vw(2.5) #F8902F;
+
+      @include mediaQuery(pc) {
+  
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    background-color: #F8902F;
+
+    @include mediaQuery(pc) {
+  
+    }
+
+    .float__cv__txt {
+      color: #fff;
+    }
+
+    &::after {
+      top: 41%;
+      right: vw(17);
+      transform: translateX(-50%) rotate(45deg);
+      border-bottom: solid vw(2.5) #fff;
+      border-right: solid vw(2.5) #fff;
+
+      @include mediaQuery(pc) {
+  
+      }
+    }
+  }
+}
+
+.float__cv__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: vw(3) vw(19) 0 0;
+
+  @include mediaQuery(pc) {
+  
+  }
+}
+
+.float__cv__txt {
+  font-weight: 700;
+  font-size: vw(14);
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+
+  @include mediaQuery(pc) {
+  
+  }
+
+  span {
+    display: block;
+    font-size: vw(12);
+    line-height: 1.4;
+    margin-bottom: vw(2);
+
+    @include mediaQuery(pc) {
+  
+    }
+  }
+}
