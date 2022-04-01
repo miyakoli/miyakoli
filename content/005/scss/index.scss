@@ -1,0 +1,9 @@
+//reset
+@import "./variables";
+@import "./mixin";
+@import "./function";
+@import "./reset";
+@import "./normalize";
+
+//layout
+@import "./*.scss";

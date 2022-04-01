@@ -1,0 +1,48 @@
+.sec05__inner {
+  padding: vw(41) 0 vw(34);
+
+  @include mediaQuery(pc) {
+    padding: 122px 0;
+  }
+}
+
+.sec05__ttl {
+  font-weight: 700;
+  font-size: vw(28);
+  line-height: 1.6;
+  letter-spacing: 0.08em;
+  font-feature-settings: 'palt' on;
+  color: #006299;
+  width: vw(325);
+  margin: 0 auto;
+
+  @include mediaQuery(pc) {
+    width: 1206px;
+    font-size: 32px;
+  }
+
+  span {
+    display: inline-block;
+    margin-left: vw(5);
+    font-size: vw(14);
+    letter-spacing: 0.04em;
+
+    @include mediaQuery(pc) {
+      margin-left: 8px;
+      font-size: 14px;
+    }
+  }
+}
+
+.sec05__slides {
+  margin-top: vw(39);
+
+  @include mediaQuery(pc) {
+    width: 1366px;
+    margin: 119px auto 0;
+  }
+
+  .swiper-wrapper {
+    height: 100%;
+  }
+}

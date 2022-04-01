@@ -1,0 +1,24 @@
+//数値から単位を取り除く
+@function strip-unit($number) {
+  @if type-of($number)=='number'and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+//px→vwの計算
+@function vw($px, $base: 375px) {
+  $value: (strip-unit($px) / strip-unit($base)) * 100vw;
+
+  @return $value;
+}
+
+//％の計算
+@function calc-sp-percentage($value) {
+  @return ($value / 750) * 100%;
+}
+
+@function calc-pc-percentage($value) {
+  @return ($value / 1920) * 100%;
+}
